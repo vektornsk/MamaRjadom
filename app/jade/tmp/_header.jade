@@ -1,0 +1,23 @@
+mixin header()
+	.header&attributes(attributes)
+		.wrap
+			.logo
+				a.logo__link(href="/")
+					img.logo__img(src="/images/logo.png", title="Мама Рядом", alt="Мама Рядом")
+			ul.menu.menu_orange
+				li.menu__item
+					a.menu__link.menu-icon-m(href="#") Меню
+				li.menu__item
+					a.menu__link.menu-icon-d(href="#") Доставка
+				li.menu__item
+					a.menu__link.menu-icon-b(href="#") Блог
+				li.menu__item
+					a.menu__link.menu-icon-a(href="#") О компании
+				li.menu__item
+					a.menu__link.menu-icon-c(href="#") Контакты			
+			.header-right
+				.phone.phone_orange
+					.phone__num +7 (383) 123-45-67
+					.phone__txt Заказы на доставку принимаются<br>с 10:00 до 21:30
+				a.cart(href="#")
+						img.cart__img(src="#", title="Корзина", alt="Корзина") 	

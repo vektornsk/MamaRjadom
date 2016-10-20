@@ -1,0 +1,33 @@
+mixin footer()
+	.footer&attributes(attributes)
+		.container
+			.footer__top
+				.logo
+					img.logo__img(src="/images/logo_white.png", title="Мама Рядом", alt="Мама Рядом")
+				ul.menu.menu_white
+					li.menu__item
+						a.menu__link(href="#") Меню
+					li.menu__item
+						a.menu__link(href="#") Доставка
+					li.menu__item
+						a.menu__link(href="#") Блог
+					li.menu__item
+						a.menu__link(href="#") О компании
+					li.menu__item
+						a.menu__link(href="#") Контакты
+				.footer-right 
+					.phone.phone_white
+						.phone__num +7 (383) 123-45-67
+						.phone__txt Заказы на доставку принимаются<br>с 10:00 до 21:30
+					ul.social
+						li.social__item
+							a.vk(href="#")
+						li.social__item
+							a.fb(href="#")
+						li.social__item
+							a.ig(href="#")
+		.footer__bottom
+			.container
+				.copy &copy;&nbsp;ООО &laquo;Мама Рядом&raquo;, 2016
+				.devel Разработка сайта:
+					a(href="http://machineheads.ru") Machineheads

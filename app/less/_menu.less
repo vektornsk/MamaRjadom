@@ -1,0 +1,45 @@
+/* top menu */
+.menu {
+  width: 640px;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    display: inline-block;
+  }
+  &__link {
+    padding-top: 60px;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1.3;
+    position: relative;
+    &:hover {
+      border-bottom: 3px solid @color-orange;
+    }
+  }
+    &_orange {
+      a {
+        color: @color-orange;
+      }
+    }
+    &_white {
+      a {
+        color: @color-white;
+      }
+    }
+
+}
+
+/* menu -top icon*/
+
+.menu-icon-m {
+  &:before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 54px;
+    height: 40px;
+    background: url(../images/m1.png) no-repeat;
+  }
+}

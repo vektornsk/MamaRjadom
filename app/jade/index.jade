@@ -1,0 +1,104 @@
+include ./tmp/_slider-top.jade
+extends ./tmp/_template.jade
+block title
+	title Главная
+block content
+	section.section-top.carousel-wrap
+		+slider-top
+	section.section-offset.section-border-up.section-border-down
+		.container
+			h2.line
+				span.title.title_orange Меню
+			ul.box-list
+				li.box
+					a.box__link(href="#")
+					.loop 
+						img(src="/images/loop.png")
+					img.box__img(src="/images/img-index-menu.png", alt="", title="")
+					.box__title Мясо, птица, рыба
+				li.box
+					a.box__link(href="#")
+					.loop 
+						img(src="/images/loop.png")
+					img.box__img(src="/images/img-index-menu2.png", alt="", title="")
+					.box__title Мясные деликатесы
+				li.box
+					a.box__link(href="#")
+					.loop 
+						img(src="/images/loop.png")
+					img.box__img(src="/images/img-index-menu3.png", alt="", title="")
+					.box__title Пельмени, вареники, манты
+				li.box
+					a.box__link(href="#")
+					.loop 
+						img(src="/images/loop.png")
+					img.box__img(src="/images/img-index-menu4.png", alt="", title="")
+					.box__title Фермерский продукты
+				li.box
+					a.box__link(href="#")
+					.loop 
+						img(src="/images/loop.png")
+					img.box__img(src="/images/img-index-menu5.png", alt="", title="")
+					.box__title Блины
+				li.box
+					a.box__link(href="#")
+					.loop 
+						img(src="/images/loop.png")
+					img.box__img(src="/images/img-index-menu6.png", alt="", title="")
+					.box__title Сладкое
+				li.box
+					a.box__link(href="#")
+					.loop 
+						img(src="/images/loop.png")
+					img.box__img(src="/images/img-index-menu7.png", alt="", title="")
+					.box__title Заготовки на зиму
+	section.section-offset.index-about
+		.container
+			h2
+				span.title.title_white О нас
+			.center-box
+				| Duis dis augue ut, amet arcu duis? Porta mid. Porta tincidunt placerat. Duis, vel placerat sed, ac! Amet sit augue, porta, adipiscing adipiscing purus, parturient cum. Adipiscing sit mattis urna magnis diam, dapibus phasellus, dictumst mid, augue purus, magnis ut? Phasellus odio, rhoncus cum! Risus aenean ut etiam augue turpis, placerat risus lorem eros cursus etiam porta? Facilisis turpis parturient phasellus pellentesque turpis arcu lacus? Penatibus, in, augue velit nec egestas vut! Lacus montes tortor. Placerat turpis in penatibus urna penatibus, lorem turpis, nec? Auctor porttitor integer mauris? Urna elementum. Elit odio egestas et, in pulvinar vut et, amet nisi eu, sagittis, urna eros? Porta mid in tempor dictumst sit, in natoque turpis tempor? Sit ridiculus pellentesque mattis odio sed.
+			ul.box-img-list
+				li.box
+					.box__img
+						img(src="/images/img-about.png", title="", alt="")
+					.box__title Готовим с любовью, своими руками.
+					li.box
+						.box__img
+							img(src="/images/img-about2.png", title="", alt="")
+						.box__title Делаем это вкусно, по домашним рецептам.
+					li.box
+						.box__img
+							img(src="/images/img-about3.png", title="", alt="")
+						.box__title Используем только натуральные продукты, выращенные на собственной ферме.
+			.btn-wrap
+				a.btn.btn_white(href="#") Подробнее
+	section.section-offset.section-border-up.index-blog
+		.container
+			h2.line
+				span.title.title_orange Блог
+			ul.box-new-list
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam adipiscing etiam. 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam adipiscing etiam. Tincidunt proin enim scelerisque 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+			.btn-wrap
+				a.btn.btn_black(href="#") Все статьи
+block hidden

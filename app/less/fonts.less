@@ -1,0 +1,23 @@
+// ========== Font-mixin ==========
+
+.include-custom-font(@family: arial, @weight: normal, @style: normal){
+	@font-face{
+		font-family: "@{family}";
+		src:url('../fonts/@{family}/@{family}.eot');
+		src:url('../fonts/@{family}/@{family}.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/@{family}/@{family}.woff') format('woff'),
+			url('../fonts/@{family}/@{family}.ttf') format('truetype'),
+			url('../fonts/@{family}/@{family}.svg#@{family}') format('svg');
+		font-weight: @weight;
+		font-style: @style;
+	}
+}
+
+// ========== Font-add ==========
+
+.include-custom-font(FaraSans-Bold);
+.include-custom-font(FaraSans-Light);
+.include-custom-font(FaraSans-Medium);
+.include-custom-font(FaraSans-Reg);
+.include-custom-font(Neucha-Reg);
+.include-custom-font(FaraSans-Book);

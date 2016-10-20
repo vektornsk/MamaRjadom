@@ -1,0 +1,238 @@
+@import "base";
+
+#wrapper {
+	min-height: calc(~ "100vh - 257px" );
+}
+#footer {
+	height: 50px;
+}
+
+.wrap {
+	padding-left: 45px;
+	padding-right: 45px;
+}
+/* section */
+.section-top {
+	padding-top: 100px;
+}
+.section-offset {
+	padding-top: 100px;
+	padding-bottom: 90px;
+}
+.section-border-up {
+	position: relative;
+	margin-top: -10px;
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0px;
+		left: 0;
+		width: 100%;
+		height: 10px;
+		background: url(../images/top_border.png) repeat-x;
+		z-index: 1;
+	}
+}
+.section-border-down {
+	position: relative;
+	margin-bottom: -10px;
+	&:after {
+		content: '';
+		position: absolute;
+		bottom: 0px;
+		left: 0;
+		width: 100%;
+		height: 10px;
+		background: url(../images/bottom_border.png) repeat-x;
+		z-index: 1;
+	}
+}
+
+
+/* h1, h2 ... */
+h1, .h1 {}
+h2, .h2 {
+	text-align: center;
+	margin-bottom: 80px;
+	&.line {
+		span {
+			padding: 0 110px;
+			background: @color-yellow;
+		}
+	}
+}
+
+.line {
+	background: url(../images/line.png) repeat-x center;
+}
+.title {
+	font-size: 46px;
+	line-height: 1;
+	font-family: @font-Neucha-reg;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+
+	&_orange {
+		color: @color-orange;
+		&:after {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			text-align: center;
+			top: -35px;
+			left: 50%;
+			width: 86px;
+			height: 24px;
+			background: url(../images/title.png) no-repeat;
+			background-position: 0 0;
+			transform: translateX(-50%);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			text-align: center;
+			bottom: -35px;
+			left: 50%;
+			width: 86px;
+			height: 24px;
+			background: url(../images/title.png) no-repeat;
+			background-position: 0 0;
+			transform: translateX(-50%);
+		}
+	}
+	&_white {
+		color: @color-white;
+		&:after {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			text-align: center;
+			top: -35px;
+			left: 50%;
+			width: 86px;
+			height: 24px;
+			background: url(../images/title.png) no-repeat;
+			background-position: 0 -27px;
+			transform: translateX(-50%);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			display: inline-block;
+			text-align: center;
+			bottom: -35px;
+			left: 50%;
+			width: 86px;
+			height: 24px;
+			background: url(../images/title.png) no-repeat;
+			background-position: 0 -27px;
+			transform: translateX(-50%);
+		}
+	}
+}
+/* button */
+.btn {
+	display: inline-block;
+	padding: 22px 62px;
+	font-size: 18px;
+	line-height: 1;
+	border-top: 2px solid #f7d3be;
+	border-left:  3px solid #f7d3be;
+	border-right: 4px solid #f7d3be;
+	border-bottom: 1px solid #f7d3be;
+	border-radius: 9px;
+	margin: 10px;
+	&_white {
+		color: @color-white;
+	}
+	&_black {
+		color: @color-black;
+	}
+	&:hover {
+		background: @color-orange;
+		border-color: @color-orange;
+		color: @color-white;
+	}
+}
+
+/* phone */
+.phone {
+	vertical-align: middle;
+	text-align: right;
+	&_orange {}
+		color: @color-orange;
+	&_white {
+		color: @color-white;
+	}
+		&__num {
+			font-family: @font-FS-bold;
+			font-size: 24px;
+			line-height: 1;
+		}
+		&__txt {
+			font-family: @font-FS-book;
+			font-size: 13px;
+			line-height: 1.3;
+		}
+}
+/* top cart */
+.cart {
+	display: inline-block;
+	vertical-align: middle;
+	width: 92px;
+	height: 92px;
+	border-radius: 100%;
+	background: @color-orange;
+}
+
+/* social */
+.social {
+	text-align: right;
+	margin-top: 30px;
+	&__item {
+		display: inline-block;
+		margin-left: 12px;
+		a {
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+			opacity: 0.5;
+			&:hover {
+				opacity: 1;
+			}
+			&.vk {
+				background: url(../images/social-vk.png) no-repeat;
+			}
+			&.fb {
+				background: url(../images/social-fb.png) no-repeat;
+			}
+			&.ig {
+				background: url(../images/social-ig.png) no-repeat;
+			}
+		}
+	}
+}
+
+
+
+/* Style include*/
+
+@import "_header";
+@import "_menu";
+@import "_box";
+@import "_carousel";
+@import "_footer";
+
+/*page О нас*/
+@import "_page-about";
+/*page Блог*/
+@import "_page-blog";
+
+
+
+// ========== @MEDIA ==========
+@import "media";

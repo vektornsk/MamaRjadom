@@ -32,10 +32,19 @@
     -webkit-box-shadow: 0px 3px 25px 3px rgba(0,0,0,0.26);
     -moz-box-shadow: 0px 3px 25px 3px rgba(0,0,0,0.26);
     box-shadow: 0px 3px 25px 3px rgba(0,0,0,0.26);
+    position: relative;
     &:hover {
       -webkit-box-shadow: 0px 3px 25px 3px rgba(0,0,0,0.35);
       -moz-box-shadow: 0px 3px 25px 3px rgba(0,0,0,0.35);
       box-shadow: 0px 3px 25px 3px rgba(0,0,0,0.35);
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 48px;
+      height: 45px;
+      transform: translate(-50%, -50%);
     }
   }
 }

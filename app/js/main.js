@@ -19,6 +19,23 @@ $(function() {
 			}
 		});
 	}
+	/* MAP yandex */
+	if ($('#map').length){
+		var myMap;
+		ymaps.ready(function () {
+	        myMap = new ymaps.Map("map", {
+	            center: [55.0231,82.9406],
+	            zoom: 17
+	        });
+					var myPlacemark = new ymaps.Placemark(
+					// Координаты метки
+					[55.0231,82.9406]
+					);
+					// Добавление метки на карту
+				myMap.geoObjects.add(myPlacemark);
+				});
+	}
+
 
 
 }); /*end $*/

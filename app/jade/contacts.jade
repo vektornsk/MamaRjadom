@@ -1,0 +1,21 @@
+include ./tmp/_slider-top.jade
+extends ./tmp/_template.jade
+block title
+	title Контакты
+block header
+	header
+		+header("header_page")
+block content
+	section.section-top.contacts
+		.container
+			h2.line
+				span.title.title_orange Контакты
+			ul.contacts-list
+				li.contacts__item
+					span.contacts-loc НСО с. Криводановка, ул. Мичурина, дом&nbsp;48
+				li.contacts__item
+					span.contacts-tel +7 (913) 387-48-27
+				li.contacts__item
+					span.contacts-email info@mamaryadom.ru
+		#map
+block hidden

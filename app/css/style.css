@@ -399,6 +399,11 @@ p.accent {
   line-height: 1.6;
   font-family: 'FaraSans-Italic', sans-serif;
 }
+/* map */
+#map {
+  width: 100%;
+  height: 540px;
+}
 /* feture */
 .feature-1 {
   width: 130px;
@@ -946,6 +951,9 @@ article h1 {
   color: #000000;
   margin-bottom: 30px;
 }
+article p {
+  font-size: 20px;
+}
 /* Footer
 ================================================================================*/
 .footer {
@@ -1103,3 +1111,60 @@ article h1 {
 }
 /* page BLOG - select
 ================================================================================*/
+/*page Контакты*/
+/* page CONTACTS
+================================================================================*/
+.contacts {
+  text-align: center;
+}
+.contacts-list {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contacts__item {
+  font-size: 20px;
+  line-height: 1;
+  padding-top: 60px;
+  margin-bottom: 60px;
+  color: #000000;
+  position: relative;
+}
+.contacts-loc:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 30px;
+  height: 43px;
+  background: url(../images/svg/Place.svg) no-repeat;
+}
+.contacts-tel:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 28px;
+  height: 45px;
+  background: url(../images/svg/Phone.svg) no-repeat;
+}
+.contacts-email:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 43px;
+  height: 34px;
+  background: url(../images/svg/Mail.svg) no-repeat;
+}

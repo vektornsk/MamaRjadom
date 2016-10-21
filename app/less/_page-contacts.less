@@ -1,0 +1,69 @@
+/* page CONTACTS
+================================================================================*/
+.contacts {
+  text-align: center;
+}
+
+.contacts-list {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.contacts {
+  &__item {
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 60px;
+    margin-bottom: 60px;
+    color: @color-black;
+    position: relative;
+    span {
+
+      &:before {
+
+      }
+    }
+  }
+}
+
+.contacts-loc {
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 43px;
+    background: url(../images/svg/Place.svg) no-repeat;
+  }
+}
+.contacts-tel {
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 45px;
+    background: url(../images/svg/Phone.svg) no-repeat;
+  }
+}
+.contacts-email {
+
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 43px;
+    height: 34px;
+    background: url(../images/svg/Mail.svg) no-repeat;
+  }
+}

@@ -184,7 +184,7 @@ h3, .h3 {
 		background: url(../images/svg/BTN_hover.svg) no-repeat;
 		color: @color-white;
 	}
-	span {
+	span.arrow {
 		position: relative;
 		padding-left: 35px;
 		&:before {
@@ -199,6 +199,40 @@ h3, .h3 {
 		}
 	}
 }
+
+.btn-menu-wrap {
+	display: inline-block;
+	background: @color-yellow;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.btn-menu {
+	display: inline-block;
+	width: 250px;
+	height: 72px;
+	background: @color-orange;
+	border-radius: 10px;
+	&:hover {
+    background: #ff602b;
+	}
+	span {
+		line-height: 72px;
+		color: @color-white;
+		font-size: 18px;
+		position: relative;
+		padding-left: 70px;
+		&:before {
+			content: '';
+			position: absolute;
+			top: -11px;
+			left: 0;
+			width: 54px;
+			height: 42px;
+			background: url(../images/svg/Menu_BTN.svg) no-repeat;
+		}
+	}
+}
+
 /* phone */
 .phone {
 	vertical-align: middle;

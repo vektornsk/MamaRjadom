@@ -86,8 +86,9 @@ h2, .h2 {
 			left: 50%;
 			width: 86px;
 			height: 24px;
-			background: url(../images/title.png) no-repeat;
-			background-position: 0 0;
+			// background: url(../images/title.png) no-repeat;
+			// background-position: 0 0;
+			background: url(../images/svg/H1_decor.svg) no-repeat;
 			transform: translateX(-50%);
 		}
 		&:before {
@@ -99,8 +100,9 @@ h2, .h2 {
 			left: 50%;
 			width: 86px;
 			height: 24px;
-			background: url(../images/title.png) no-repeat;
-			background-position: 0 0;
+			// background: url(../images/title.png) no-repeat;
+			// background-position: 0 0;
+			background: url(../images/svg/H1_decor.svg) no-repeat;
 			transform: translateX(-50%);
 		}
 	}
@@ -115,8 +117,9 @@ h2, .h2 {
 			left: 50%;
 			width: 86px;
 			height: 24px;
-			background: url(../images/title.png) no-repeat;
-			background-position: 0 -27px;
+			// background: url(../images/title.png) no-repeat;
+			// background-position: 0 -27px;
+			background: url(../images/svg/H1_decor_white.svg) no-repeat;
 			transform: translateX(-50%);
 		}
 		&:before {
@@ -128,8 +131,9 @@ h2, .h2 {
 			left: 50%;
 			width: 86px;
 			height: 24px;
-			background: url(../images/title.png) no-repeat;
-			background-position: 0 -27px;
+			// background: url(../images/title.png) no-repeat;
+			// background-position: 0 -27px;
+			background: url(../images/svg/H1_decor_white.svg) no-repeat;
 			transform: translateX(-50%);
 		}
 	}
@@ -140,10 +144,7 @@ h2, .h2 {
 	padding: 22px 62px;
 	font-size: 18px;
 	line-height: 1;
-	border-top: 2px solid #f7d3be;
-	border-left:  3px solid #f7d3be;
-	border-right: 4px solid #f7d3be;
-	border-bottom: 1px solid #f7d3be;
+	background: url(../images/svg/BTN.svg) no-repeat;
 	border-radius: 9px;
 	margin: 10px;
 	&_white {
@@ -153,12 +154,10 @@ h2, .h2 {
 		color: @color-black;
 	}
 	&:hover {
-		background: @color-orange;
-		border-color: @color-orange;
+		background: url(../images/svg/BTN_hover.svg) no-repeat;
 		color: @color-white;
 	}
 }
-
 /* phone */
 .phone {
 	vertical-align: middle;
@@ -189,38 +188,23 @@ h2, .h2 {
 	background: @color-orange;
 }
 
-/* social */
-.social {
-	text-align: right;
-	margin-top: 30px;
-	&__item {
-		display: inline-block;
-		margin-left: 12px;
-		a {
-			display: inline-block;
-			width: 30px;
-			height: 30px;
-			opacity: 0.5;
-			&:hover {
-				opacity: 1;
-			}
-			&.vk {
-				background: url(../images/social-vk.png) no-repeat;
-			}
-			&.fb {
-				background: url(../images/social-fb.png) no-repeat;
-			}
-			&.ig {
-				background: url(../images/social-ig.png) no-repeat;
-			}
-		}
-	}
+/* feture */
+.feature-1 {
+	width: 130px;
+	height: 95px;
+}
+.feature-2 {
+	width: 121px;
+	height: 89px;
+}
+.feature-3 {
+	width: 205px;
+	height: 97px;
 }
 
 
 
 /* Style include*/
-
 @import "_header";
 @import "_menu";
 @import "_box";

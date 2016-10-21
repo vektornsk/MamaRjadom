@@ -1,0 +1,38 @@
+/* bread-crumbs
+================================================================================*/
+.bread-crumbs {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__link {
+    color: @color-orange;
+    font-size: 14px;
+    line-height: 1;
+    margin-right: 30px;
+    position: relative;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      height: 12px;
+      background: url(../images/svg/brdcrmbs.svg) no-repeat;
+      right: -24px;
+      top: 4px;
+    }
+    &_last {
+      color: #969696;
+      &:hover {
+        text-decoration: none;
+      }
+      &::after {
+        content: none;
+      }
+    }
+  }
+}

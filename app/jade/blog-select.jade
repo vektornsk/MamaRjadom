@@ -1,0 +1,54 @@
+include ./tmp/_slider-top.jade
+include ./tmp/_bread-crumbs.jade
+extends ./tmp/_template.jade
+block title
+	title Блог - Детальная
+block header
+	header
+		+header("header_page")
+block content
+	.box-img
+		img(src="/images/img-1.jpg", title="", alt="")
+	section.section-border-up.section-bottom.blog
+		.container
+			.content_min
+				+bread
+				article
+					h1
+						span Porttitor in rhoncus amet diam adipiscing etiam. Tincidunt proin enim scelerisque amet.
+					p
+						| Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eg	
+					p.accent
+						| Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+					p
+						| Русский язык занимает важное место в плеяде языков мира. Русский язык принадлежит к языковой системе родственных индоевропейских языков, которые по происхождению восходят к индоевропейскому праязыку. Он был в ходу у предков ряда народов, проживающих на бескрайних просторах Европы и Азии. По своей специфике (особенностям грамматики, фонетики и лексики), русский язык отличается от языков других языковых семей: тюркских, финно-угорских, китайско-тибетских и других.
+					p
+						| Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eg
+			h3.line
+				span Другие статьи
+			ul.box-new-list
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam adipiscing etiam. 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam adipiscing etiam. Tincidunt proin enim scelerisque 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+			.btn-wrap
+				a.btn.btn_black(href="#")
+					span Вернуться к списку
+block hidden

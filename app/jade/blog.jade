@@ -1,0 +1,58 @@
+include ./tmp/_slider-top.jade
+extends ./tmp/_template.jade
+block title
+	title Блог
+block header
+	header
+		+header("header_page")
+block content
+	section.section-offset.blog
+		.container
+			h2.line
+				span.title.title_orange Блог
+			ul.box-new-list
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam adipiscing etiam. 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam adipiscing etiam. Tincidunt proin enim scelerisque 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+						li.box
+							a.box__link(href="")
+								.box__img
+									img(src="/images/img-blog.png")
+								.box__date 14.12.16
+								.box__title Porttitor in rhoncus amet diam adipiscing etiam. 
+								.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+				li.box
+					a.box__link(href="")
+						.box__img
+							img(src="/images/img-blog.png")
+						.box__date 14.12.16
+						.box__title Porttitor in rhoncus amet diam adipiscing etiam. Tincidunt proin enim scelerisque 
+						.box__txt Turpis hac scelerisque placerat augue cras odio sagittis! Urna lorem dis odio lacus mid mattis. Purus pid, urna scelerisque tincidunt et ...
+			.btn-wrap
+				a.btn.btn_black(href="#") Ещё
+block hidden

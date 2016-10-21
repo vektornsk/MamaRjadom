@@ -304,13 +304,14 @@ h2.line span,
 /* button */
 .btn {
   display: inline-block;
-  padding: 22px 62px;
   font-size: 18px;
-  line-height: 1;
+  line-height: 67px;
   background: url(../images/svg/BTN.svg) no-repeat;
   -webkit-border-radius: 9px;
   border-radius: 9px;
   margin: 10px;
+  width: 230px;
+  height: 67px;
 }
 .btn_white {
   color: #ffffff;
@@ -376,6 +377,11 @@ h2.line span,
   background: -webkit-linear-gradient(top, #fffae8 54%, rgba(255, 255, 255, 0) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(54%, #fffae8), to(rgba(255, 255, 255, 0)));
   background: linear-gradient(to bottom, #fffae8 54%, rgba(255, 255, 255, 0) 100%);
+}
+.header_page {
+  position: static;
+  height: 120px;
+  background: #fffae8;
 }
 .header .wrap {
   display: -webkit-box;
@@ -696,8 +702,15 @@ h2.line span,
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .box-new-list .box {
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
   width: 30.7%;
   overflow: hidden;
   position: relative;
@@ -951,5 +964,12 @@ h2.line span,
 /*index-blog*/
 .index-blog .btn-wrap {
   margin-top: 40px;
+  text-align: center;
+}
+/* page-blog */
+.blog .box-new-list .box {
+  margin-bottom: 30px;
+}
+.blog .btn-wrap {
   text-align: center;
 }

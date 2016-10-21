@@ -1,5 +1,5 @@
-mixin header()
-	.header&attributes(attributes)
+mixin header(className)
+	.header&attributes(attributes)(class=className)
 		.wrap
 			.logo
 				a.logo__link(href="/")
@@ -10,7 +10,7 @@ mixin header()
 				li.menu__item
 					a.menu__link.menu-icon-d(href="#") Доставка
 				li.menu__item
-					a.menu__link.menu-icon-b(href="#") Блог
+					a.menu__link.menu-icon-b(href="/html/blog.html") Блог 
 				li.menu__item
 					a.menu__link.menu-icon-a(href="#") О компании
 				li.menu__item

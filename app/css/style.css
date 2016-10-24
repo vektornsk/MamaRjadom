@@ -525,6 +525,11 @@ p.accent {
     right: 30px;
   }
 }
+@media (max-width: 991px) {
+  .header .header-right {
+    right: 20px;
+  }
+}
 @media (max-width: 1199px) {
   .header .phone {
     display: none;
@@ -545,6 +550,11 @@ p.accent {
 @media (max-width: 1199px) {
   .header .m-menu {
     display: block;
+  }
+}
+@media (max-width: 991px) {
+  .header .m-menu {
+    margin-left: 20px;
   }
 }
 .header .m-menu.active {
@@ -627,6 +637,12 @@ p.accent {
 .logo__img {
   width: 213px;
   height: 97px;
+}
+@media (max-width: 991px) {
+  .logo__img {
+    width: 198px;
+    height: 97px;
+  }
 }
 /* top cart */
 .cart {
@@ -927,6 +943,12 @@ p.accent {
     height: 187px;
   }
 }
+@media (max-width: 991px) {
+  .box-list .box {
+    width: 220px;
+    height: 195px;
+  }
+}
 .box-list .box__link {
   position: absolute;
   width: 100%;
@@ -1166,6 +1188,13 @@ p.accent {
 @media (max-width: 1199px) {
   .carusel-box {
     width: 940px;
+    font-size: 46px;
+  }
+}
+@media (max-width: 991px) {
+  .carusel-box {
+    width: 750px;
+    border: none;
   }
 }
 .carusel-box h1 {
@@ -1296,6 +1325,11 @@ article p {
     justify-content: flex-start;
   }
 }
+@media (max-width: 991px) {
+  .footer__top .menu {
+    margin-left: 40px;
+  }
+}
 @media (max-width: 1199px) {
   .footer__top .menu__item {
     width: 50%;
@@ -1317,6 +1351,12 @@ article p {
   width: 248px;
   height: 114px;
 }
+@media (max-width: 991px) {
+  .footer__top .logo__img {
+    width: 198px;
+    height: 90px;
+  }
+}
 .footer__top .menu__item {
   opacity: 0.7;
 }
@@ -1331,6 +1371,13 @@ article p {
   .footer-right {
     position: absolute;
     right: 30px;
+  }
+}
+@media (max-width: 1199px) {
+  .footer-right {
+    position: absolute;
+    right: 20px;
+    padding: 0;
   }
 }
 .footer__bottom {
@@ -1428,6 +1475,12 @@ article p {
   line-height: 1.5;
   margin-bottom: 75px;
 }
+@media (max-width: 991px) {
+  .index-about .center-box {
+    width: 100%;
+    font-size: 16px;
+  }
+}
 .index-about .box-img-list {
   margin-bottom: 60px;
 }
@@ -1455,6 +1508,14 @@ article p {
 .index-blog .btn-wrap {
   margin-top: 40px;
   text-align: center;
+}
+@media (max-width: 991px) {
+  .index-blog .box-new-list .box {
+    width: 345px;
+  }
+  .index-blog .box-new-list .box:last-child {
+    display: none;
+  }
 }
 /* page-blog */
 .blog .box-new-list .box {

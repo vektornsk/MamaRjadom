@@ -1,0 +1,26 @@
+include ./tmp/_slider-top.jade
+extends ./tmp/_template.jade
+block title
+	title Доставка
+block header
+	header
+		+header("header_page")
+block content
+	section.section-offset.delivery
+		.container
+			h2.line
+				span.title.title_orange Доставка
+			article.content_min
+				h3 Доставка курьером:
+				p Доставка курьером осуществляется по вторникам и пятницам.
+				.img-wrap
+					img.visa-img(src="/images/svg/Payment_Visa.svg")
+					img.mc-img(src="/images/svg/Payment_MasterCard.svg")
+					img.mc-cash(src="/images/svg/Payment_Cash.svg")
+				p Оплата заказа производится с курьером, наличными или платежными картами VISA, Mastercard. 
+				p При расчете крупными купюрами (1000руб, 5000руб.) когда Вам требуется сдача, сообщите обязательно оператору.
+				p При оплате платежными картами (VISA, MasterCard) заранее сообщите оператору, курьер приедет к Вам с терминалом.
+				h3 Самовывоз:
+				p Cвой заказ можно получить по адресу: Северная ул, дом 4 каждый день с с 9:00 до 23:00.
+			#map2
+block hidden

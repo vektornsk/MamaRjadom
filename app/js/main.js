@@ -41,6 +41,21 @@ $(function() {
 				myMap.geoObjects.add(myPlacemark);
 				});
 	}
+	if ($('#map2').length){
+		var myMap2;
+		ymaps.ready(function () {
+	        myMap2 = new ymaps.Map("map2", {
+	            center: [55.0231,82.9406],
+	            zoom: 17
+	        });
+					var myPlacemark2 = new ymaps.Placemark(
+					// Координаты метки
+					[55.0231,82.9406]
+					);
+					// Добавление метки на карту
+				myMap2.geoObjects.add(myPlacemark2);
+				});
+	}
 
 
 

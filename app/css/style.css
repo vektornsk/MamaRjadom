@@ -546,6 +546,11 @@ p.accent {
   -ms-flex-align: start;
   align-items: flex-start;
 }
+@media (max-width: 1366px) {
+  .menu {
+    width: 540px;
+  }
+}
 .menu__item {
   display: inline-block;
 }
@@ -743,6 +748,10 @@ p.accent {
   color: #ffffff;
   font-size: 18px;
   z-index: 1;
+  -webkit-border-bottom-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  -webkit-border-bottom-right-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 .loop {
   display: none;
@@ -752,6 +761,8 @@ p.accent {
   height: 100%;
   background: rgba(241, 90, 41, 0.7);
   z-index: 1;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 .loop img {
   position: absolute;
@@ -896,6 +907,7 @@ p.accent {
 .carousel {
   width: 100%;
   overflow: hidden;
+  height: 475px;
 }
 .carousel__item {
   position: relative;
@@ -909,14 +921,16 @@ p.accent {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
 }
 .carousel__img {
   width: 100%;
-  height: auto;
+  height: 475px;
   object-fit: cover;
 }
 .carusel-box {
-  width: 100%;
+  width: 60%;
   display: inline-block;
   border-style: solid;
   border-width: 99px 100px 100px;

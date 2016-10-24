@@ -12,9 +12,35 @@
   justify-content: space-between;
   padding-top: 40px;
   align-items: flex-start;
-
+  @media (max-width: 1199px){
+    justify-content: flex-start;
+  }
   .menu {
     width: 550px;
+      @media (max-width: 1199px){
+        margin-left: 50px;
+        flex-wrap: wrap;
+        width: 230px;
+        justify-content: flex-start;
+      }
+
+    &__item {
+      @media (max-width: 1199px){
+        width: 50%;
+        margin-bottom: 16px;
+      }
+    }
+    &__link {
+      @media (max-width: 1199px){
+        padding-top: 0;
+        &:before {
+          content: none;
+        }
+        &:hover {
+          border-bottom: 0;
+        }
+      }
+    }
   }
 
   .logo {
@@ -34,6 +60,10 @@
 }
 .footer-right {
   padding-top: 20px;
+  @media (max-width: 1199px){
+    position: absolute;
+    right: 30px;
+  }
 }
 
 .footer__bottom {

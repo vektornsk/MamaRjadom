@@ -4,6 +4,7 @@ mixin header(className)
 			.logo
 				a.logo__link(href="/")
 					img.logo__img(src="/images/svg/Logo_header.svg", title="Мама Рядом", alt="Мама Рядом")
+			.m-menu
 			ul.menu.menu_orange
 				li.menu__item
 					a.menu__link.menu-icon-m.active(href="#") Меню
@@ -14,7 +15,13 @@ mixin header(className)
 				li.menu__item
 					a.menu__link.menu-icon-a(href="/html/about.html") О компании
 				li.menu__item
-					a.menu__link.menu-icon-c(href="/html/contacts.html") Контакты			
+					a.menu__link.menu-icon-c(href="/html/contacts.html") Контакты
+				li.menu__item.m-menu-item
+					.phone__num +7 (383) 123-45-67
+					.phone__txt Заказы на доставку принимаются<br>с 10:00 до 21:30	
+				.m-logo
+					a.logo__link(href="/")
+						img.logo__img(src="/images/svg/Logo_footer.svg", title="Мама Рядом", alt="Мама Рядом")
 			.header-right
 				.phone.phone_orange
 					.phone__num +7 (383) 123-45-67

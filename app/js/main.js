@@ -9,6 +9,12 @@ $(function() {
 	  cssEase: 'linear'
 	});
 
+	/* mobil menu*/
+
+	$('.m-menu').on('click', function(){
+		$(this).toggleClass('active').next('.menu').toggleClass('active');
+	});
+
 	/* long txt */
 	function cutLongString(element, count_lit){
 		element.each(function(i, elem){

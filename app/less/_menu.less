@@ -7,6 +7,9 @@
   @media (max-width: 1366px) {
     width: 540px;
   }
+  @media (max-width: 1270px) {
+    width: 500px;
+  }
   &__item {
     display: inline-block;
   }
@@ -158,5 +161,89 @@
     width: 30px;
     height: 43px;
     background: url(../images/svg/m_contakt_w.svg) no-repeat;
+  }
+}
+
+/*mobil menu*/
+.m-logo {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+  display: none;
+  @media (max-width: 1199px){
+    display: block;
+  }
+}
+.m-menu-item {
+  display: none;
+  color: @color-white;
+  padding-top: 75px !important;
+  @media (max-width: 1199px){
+    display: block;
+  }
+  .phone__num {
+    margin-bottom: 5px;
+  }
+}
+.menu {
+  &.active {
+    display: flex;
+    background: @color-orange;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 140px;
+
+    .menu__item {
+      width: 50%;
+      height: 205px;
+      text-align: center;
+      border-top: 4px solid #f26739;
+      padding-top: 60px;
+      &:nth-child(1n) {
+        border-right: 2px solid #f26739;
+      }
+      &:nth-child(2n) {
+        border-left: 2px solid #f26739;
+      }
+    }
+    .menu__link {
+      color: @color-white;
+      &:hover {
+        border-bottom-color: @color-white;
+      }
+      &.active {
+        border-bottom-color: @color-white;
+      }
+    }
+    .menu-icon-m {
+      &:before {
+        background: url(../images/svg/m_menu_w.svg) no-repeat;
+      }
+    }
+    .menu-icon-d {
+      &:before {
+        background: url(../images/svg/m_dostavka_w.svg) no-repeat;
+      }
+    }
+    .menu-icon-b {
+      &:before {
+        background: url(../images/svg/m_blog_w.svg) no-repeat;
+      }
+    }
+    .menu-icon-a {
+      &:before {
+        background: url(../images/svg/m_about_w.svg) no-repeat;
+      }
+    }
+    .menu-icon-c {
+      &:before {
+        background: url(../images/svg/m_contakt_w.svg) no-repeat;
+      }
+    }
   }
 }

@@ -772,6 +772,7 @@ p.accent {
   position: absolute;
   width: 100%;
   top: 20px;
+  left: 0;
   text-align: center;
   display: none;
 }

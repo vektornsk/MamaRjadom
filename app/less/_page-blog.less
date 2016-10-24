@@ -6,6 +6,9 @@
   .btn-wrap {
     margin-top: 40px;
     text-align: center;
+    @media (max-width: 767px){
+      margin: 0;
+    }
   }
   .box-new-list {
     @media (max-width: 991px) {
@@ -13,7 +16,18 @@
         width: 345px;
         &:last-child {
           display: none;
+          @media (max-width: 767px){
+            display: block;
+          }
         }
+      }
+    }
+    @media (max-width: 767px){
+      padding-left: 20px;
+      padding-right: 20px;
+      .box {
+        width: 100%;
+        margin-bottom: 25px;
       }
     }
   }

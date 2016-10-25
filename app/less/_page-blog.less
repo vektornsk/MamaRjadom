@@ -68,3 +68,33 @@
 
 /* page BLOG - select
 ================================================================================*/
+
+.blog-sl {
+  .box-new-list {
+    @media (max-width: 991px) {
+      .box {
+        width: 345px;
+        &:last-child {
+          display: none;
+          @media (max-width: 767px){
+            display: block;
+          }
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      .box {
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+.section-border-up.blog-sl {
+  @media (max-width: 767px){
+    margin-top: 40px;
+    &:before {
+      content: none;
+    }
+  }
+}

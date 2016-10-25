@@ -11,6 +11,11 @@
     }
   }
   .box-new-list {
+    @media (max-width: 1199px) {
+      .box {
+        width: 294px;
+      }
+    }
     @media (max-width: 991px) {
       .box {
         width: 345px;
@@ -35,8 +40,26 @@
 
 /* page-blog */
 .blog {
-  .box-new-list .box {
-    margin-bottom: 30px;
+  .box-new-list {
+    @media (max-width: 767px){
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+    .box {
+      margin-bottom: 30px;
+      @media (max-width: 1199px) {
+        width: 294px;
+      }
+      @media (max-width: 991px) {
+        width: 345px;
+      }
+      @media (max-width: 767px){
+        width: 100%;
+        margin-bottom: 25px;
+      }
+    }
+
   }
   .btn-wrap {
     text-align: center;

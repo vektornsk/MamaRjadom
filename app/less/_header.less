@@ -21,6 +21,13 @@
     position: static;
     height: 150px;
     background: @color-yellow;
+    @media (max-width: 991px) {
+      height: 100px;
+    }
+    @media (max-width: 767px) {
+      height: 85px;
+      padding-top: 10px;
+    }
   }
     .wrap {
       display: flex;

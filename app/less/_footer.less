@@ -5,6 +5,9 @@
   background: @color-orange;
   height: 257px;
   position: relative;
+  @media (max-width: 767px){
+    height: 570px;
+  }
 }
 
 .footer__top {
@@ -14,6 +17,10 @@
   align-items: flex-start;
   @media (max-width: 1199px){
     justify-content: flex-start;
+  }
+  @media (max-width: 767px){
+    flex-direction: column;
+    padding-left: 20px;
   }
   .menu {
     width: 550px;
@@ -26,11 +33,20 @@
       @media (max-width: 991px){
         margin-left: 40px;
       }
+      @media (max-width: 767px){
+        margin-left: 0;
+        flex-direction: column;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
 
     &__item {
       @media (max-width: 1199px){
         width: 50%;
         margin-bottom: 16px;
+      }
+      @media (max-width: 767px){
+        width: 100%;
       }
     }
     &__link {
@@ -54,11 +70,18 @@
         width: 198px;
         height: 90px;
       }
+      @media (max-width: 767px){
+        width: 135px;
+        height: 62px;
+      }
     }
   }
 
   .menu__item {
     opacity: 0.7;
+    @media (max-width: 767px){
+      opacity: 1;
+    }
     &:hover {
       opacity: 1;
       border-bottom: none;
@@ -76,6 +99,17 @@
     right: 20px;
     padding: 0;
   }
+  @media (max-width: 767px){
+    position: static;
+  }
+  .phone {
+    @media (max-width: 767px){
+      text-align: left;
+      &__num {
+        margin-bottom: 5px;
+      }
+    }
+  }
 }
 
 .footer__bottom {
@@ -86,6 +120,11 @@
   width: 100%;
   bottom: 0;
   background: #c43a0d;
+  @media (max-width: 767px){
+    height: 75px;
+    padding-left: 20px;
+    padding-top: 14px;
+  }
   .container {
     .cf;
   }
@@ -94,11 +133,20 @@
     display: inline-block;
     color: @color-white;
     font-size: 16px;
+    @media (max-width: 767px){
+      float: none;
+      display: block;
+      margin-bottom: 3px;
+    }
   }
   .devel {
     float: right;
     color: @color-white;
     font-size: 16px;
+    @media (max-width: 767px){
+      float: none;
+      display: block;
+    }
     a {
       font-family: @font-FS-light;
       color: @color-white;
@@ -124,9 +172,16 @@
 .social {
 	text-align: right;
 	margin-top: 30px;
+  @media (max-width: 767px){
+    text-align: left;
+  }
 	&__item {
 		display: inline-block;
 		margin-left: 12px;
+    @media (max-width: 767px){
+      margin-right: 12px;
+      margin-left: auto;
+    }
 		a {
 			display: inline-block;
 			width: 30px;

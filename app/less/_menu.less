@@ -186,6 +186,10 @@
   .phone__num {
     margin-bottom: 5px;
   }
+  @media (max-width: 767px){
+    padding-top: 40px !important;
+    margin-bottom: 20px;
+  }
 }
 .menu {
   &.active {
@@ -198,6 +202,10 @@
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 140px;
+    @media (max-width: 767px){
+      padding-top: 100px;
+      flex-direction: column;
+    }
 
     .menu__item {
       width: 50%;
@@ -205,45 +213,80 @@
       text-align: center;
       border-top: 4px solid #f26739;
       padding-top: 60px;
+      @media (max-width: 767px){
+        height: auto;
+        width: 100%;
+        border-top: none;
+        padding-top: 12px;
+        padding-bottom: 15px;
+      }
       &:nth-child(1n) {
         border-right: 2px solid #f26739;
+        @media (max-width: 767px){
+          border: none;
+        }
       }
       &:nth-child(2n) {
         border-left: 2px solid #f26739;
+        @media (max-width: 767px){
+          border: none;
+        }
       }
     }
     .menu__link {
       color: @color-white;
       &:hover {
         border-bottom-color: @color-white;
+        @media (max-width: 767px){
+          border-bottom: none;
+        }
       }
       &.active {
         border-bottom-color: @color-white;
+      }
+      @media (max-width: 767px){
+        font-size: 24px;
+        padding-top: 0;
       }
     }
     .menu-icon-m {
       &:before {
         background: url(../images/svg/m_menu_w.svg) no-repeat;
+        @media (max-width: 767px){
+          content: none;
+        }
       }
     }
     .menu-icon-d {
       &:before {
         background: url(../images/svg/m_dostavka_w.svg) no-repeat;
+        @media (max-width: 767px){
+          content: none;
+        }
       }
     }
     .menu-icon-b {
       &:before {
         background: url(../images/svg/m_blog_w.svg) no-repeat;
+        @media (max-width: 767px){
+          content: none;
+        }
       }
     }
     .menu-icon-a {
       &:before {
         background: url(../images/svg/m_about_w.svg) no-repeat;
+        @media (max-width: 767px){
+          content: none;
+        }
       }
     }
     .menu-icon-c {
       &:before {
         background: url(../images/svg/m_contakt_w.svg) no-repeat;
+        @media (max-width: 767px){
+          content: none;
+        }
       }
     }
   }

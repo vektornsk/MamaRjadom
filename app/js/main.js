@@ -63,24 +63,36 @@ $(function() {
 ====================*/
 if ($('#map').length){
 	var map;
-
+	var myIcon;
     DG.then(function () {
         map = DG.map('map', {
             center: [55.087674, 82.667844],
             zoom: 16
         });
-				DG.marker([55.087674, 82.667844]).addTo(map).bindPopup('МамаРядом!');
+				myIcon = DG.icon({
+					iconUrl: '/images/map-marker.png',
+          iconSize: [41, 81],
+					iconAnchor: [25, 64]
+				});
+				DG.marker([55.087674, 82.667844], {icon: myIcon}).addTo(map).bindPopup('МамаРядом!');
+
     });
 }
 if ($('#map2').length){
 	var map2;
+	var myIcon2;
 
     DG.then(function () {
         map2 = DG.map('map2', {
             center: [55.087674, 82.667844],
             zoom: 16
         });
-				DG.marker([55.087674, 82.667844]).addTo(map2).bindPopup('МамаРядом!');
+				myIcon2 = DG.icon({
+					iconUrl: '/images/map-marker.png',
+          iconSize: [41, 81],
+					iconAnchor: [25, 64]
+				});
+				DG.marker([55.087674, 82.667844], {icon: myIcon2}).addTo(map2).bindPopup('МамаРядом!');
     });
 }
 

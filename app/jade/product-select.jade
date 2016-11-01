@@ -1,0 +1,41 @@
+include ./tmp/_slider-top.jade
+include ./tmp/_bread-crumbs.jade
+extends ./tmp/_template.jade
+block title
+	title Товар - Детальная
+block header
+	header
+		+header("header_page")
+block content
+	section.section-bottom.product-sl
+		.container
+			+bread
+			article
+				h1
+					span Вареники с картошечкой и жареным луком
+				.product-sl-wrap
+					.left
+					.right
+						p 
+							| Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+						p
+							| <b>Состав:</b> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada.
+						p 500 гр.
+						.product__box
+							.product__price
+								span.price 450
+								span.rouble c
+							.product__calc
+								input.btn-calc.minus-btn(type="button", value="-")
+								input.product__size(type="text", name="product-col", value="1", readonly="readonly")
+								input.btn-calc.plus-btn(type="button", value="+")
+						.product__add-cart
+							span.not-add В корзину
+							span.add-cart В корзине
+						.btn-wrap
+							a.btn.btn_black(href="#")
+								span.recipe Рецепт
+			.btn-wrap
+				a.btn.btn_black(href="#")
+					span.arrow Вернуться к списку
+block hidden

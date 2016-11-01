@@ -231,6 +231,7 @@ h3, .h3 {
 	margin: 10px;
 	width: 230px;
 	height: 67px;
+	text-align: center;
 
 	&_white {
 		color: @color-white;
@@ -254,6 +255,20 @@ h3, .h3 {
 			top: 0;
 			left: 0;
 			background: url(../images/svg/btn-arrow.svg) no-repeat;
+		}
+	}
+	span.recipe {
+		position: relative;
+		padding-left: 40px;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 28px;
+			height: 26px;
+			top: -2px;
+			left: 0;
+			background: url(../images/svg/Recipe.svg) no-repeat;
 		}
 	}
 }
@@ -382,6 +397,12 @@ p.accent {
 	// display: inline-block;
 	padding: 0 2px
 }
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
 
 
 /* Style include*/
@@ -403,6 +424,7 @@ p.accent {
 @import "_page-contacts";
 /*page Доставка*/
 @import "_page-delivery";
+@import "_page-product";
 
 
 // ========== @MEDIA ==========

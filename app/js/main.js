@@ -111,7 +111,6 @@ $('.plus-btn').on('click', function(){
 			this.innerHTML = (num + 450 ).toFixed(0);
 		}
 	});
-	console.log(inputPrice)
 });
 $('.minus-btn').on('click', function(){
 	var inputSize = $(this).parent().find('.product__size').val();
@@ -140,5 +139,14 @@ $('.product__add-cart').on('click', function(){
 	$(this).toggleClass('active');
 });
 
+/* header fixed*/
+$(window).scroll(function() {
+if ($(this).scrollTop() > 1){
+    $('.header').addClass("header_fixed");
+  }
+  else{
+    $('.header').removeClass("header_fixed");
+  }
+});
 
 }); /*end $*/

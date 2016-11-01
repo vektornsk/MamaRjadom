@@ -639,7 +639,7 @@ p.accent {
 }
 .header_page {
   position: static;
-  height: 105px;
+  height: 120px;
   background: #fffae8;
 }
 @media (max-width: 991px) {
@@ -749,6 +749,33 @@ p.accent {
     position: absolute;
     display: none;
   }
+}
+.header_fixed {
+  position: fixed !important;
+  height: 120px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fffae8;
+}
+.header_fixed .wrap {
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.header_fixed .logo {
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.header_fixed .menu {
+  position: absolute;
+  display: none;
+}
+.header_fixed .m-menu {
+  display: block;
 }
 .header-right {
   zoom: 1;

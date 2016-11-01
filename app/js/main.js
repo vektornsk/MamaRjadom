@@ -108,9 +108,10 @@ $('.plus-btn').on('click', function(){
 	$(price).animate({num: inputPrice }, {
 		duration: 1000,
 		step: function(num){
-			this.innerHTML = (num + 450).toFixed(0);
+			this.innerHTML = (num + 450 ).toFixed(0);
 		}
 	});
+	console.log(inputPrice)
 });
 $('.minus-btn').on('click', function(){
 	var inputSize = $(this).parent().find('.product__size').val();

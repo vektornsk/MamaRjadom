@@ -811,6 +811,21 @@ p.accent {
     display: inline-block;
   }
 }
+.header-right .cart .cart__size {
+  max-width: 40px;
+  min-width: 20px;
+  height: 20px;
+  background: #ffffff;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  text-align: center;
+  position: absolute;
+  top: 55px;
+  left: 50px;
+  line-height: 23px;
+  color: #000000;
+  overflow: hidden;
+}
 /* logo */
 .logo__img {
   width: 213px;

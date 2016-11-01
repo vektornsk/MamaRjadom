@@ -105,7 +105,7 @@ $('.plus-btn').on('click', function(){
 	var price = $(this).parent().prev().find('.price');
 	var inputPrice = $(this).parent().prev().find('.price').text();
 
-	$(price).animate({num: inputPrice}, {
+	$(price).animate({num: inputPrice }, {
 		duration: 1000,
 		step: function(num){
 			this.innerHTML = (num + 450).toFixed(0);
@@ -133,7 +133,11 @@ $('.minus-btn').on('click', function(){
 	});
 });
 
+/* add cart btn */
 
+$('.product__add-cart').on('click', function(){
+	$(this).toggleClass('active');
+});
 
 
 }); /*end $*/

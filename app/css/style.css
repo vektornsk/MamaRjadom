@@ -812,17 +812,15 @@ p.accent {
   }
 }
 .header-right .cart .cart__size {
-  max-width: 40px;
-  min-width: 20px;
-  height: 20px;
+  padding: 5px 5px 2px;
   background: #ffffff;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   text-align: center;
   position: absolute;
   top: 55px;
   left: 50px;
-  line-height: 23px;
+  line-height: 12px;
   color: #000000;
   overflow: hidden;
 }

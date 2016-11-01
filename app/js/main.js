@@ -96,6 +96,42 @@ if ($('#map2').length){
     });
 }
 
+/* float number */
+
+$('.plus-btn').on('click', function(){
+	var inputSize = $(this).parent().find('.product__size').val();
+	inputSize++;
+	$(this).parent().find('.product__size').val(inputSize);
+	var price = $(this).parent().prev().find('.price');
+	var inputPrice = $(this).parent().prev().find('.price').text();
+
+	$(price).animate({num: inputPrice}, {
+		duration: 1000,
+		step: function(num){
+			this.innerHTML = (num + 450).toFixed(0);
+		}
+	});
+});
+$('.minus-btn').on('click', function(){
+	var inputSize = $(this).parent().find('.product__size').val();
+	inputSize--;
+	var price = $(this).parent().prev().find('.price');
+	var inputPrice = $(this).parent().prev().find('.price').text();
+
+	if (inputSize <= 0) {
+		inputSize = 1;
+		$(this).parent().find('.product__size').val(inputSize);
+		return;
+	}
+	$(this).parent().find('.product__size').val(inputSize);
+
+	$(price).animate({num: inputPrice}, {
+		duration: 1000,
+		step: function(num){
+			this.innerHTML = (num - 450).toFixed(0);
+		}
+	});
+});
 
 
 

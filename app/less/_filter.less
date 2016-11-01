@@ -1,0 +1,34 @@
+/* filter
+================================================================================*/
+
+.filter-wrap {}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  &_p-menu {
+    margin-top: -30px;
+  }
+  &__item {
+    margin: 10px;
+  }
+  &__link {
+    display: inline-block;
+    border: 2px solid @color-orange;
+    padding: 5px 10px;
+    font-size: 18px;
+    line-height: 1;
+    color: @color-black;
+    border-radius: 4px;
+    &:hover {
+      background: @color-orange;
+      color: @color-white;
+    }
+    &.active {
+      background: @color-orange;
+      color: @color-white;
+    }
+  }
+}

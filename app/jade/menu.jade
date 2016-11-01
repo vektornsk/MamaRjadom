@@ -1,0 +1,125 @@
+include ./tmp/_slider-top.jade
+extends ./tmp/_template.jade
+block title
+	title Меню
+block header
+	header
+		+header("header_page")
+block content
+	section.section-offset.delivery
+		.container
+			h2.line
+				span.title.title_orange Меню
+			.filter-wrap
+				ul.filter.filter_p-menu
+					li.filter__item
+						a.filter__link.active(href="#") Популярное
+					li.filter__item
+						a.filter__link(href="#") Пельмени\вареники\манты
+					li.filter__item
+						a.filter__link(href="#") Мясо\курица\рыба
+					li.filter__item
+						a.filter__link(href="#") Мясные деликатесы
+					li.filter__item
+						a.filter__link(href="#") Заготовки на зиму
+					li.filter__item
+						a.filter__link(href="#") Блины
+					li.filter__item
+						a.filter__link(href="#") Сладкое
+					li.filter__item
+						a.filter__link(href="#") Фермерские продукты
+			h3 Пельмени\вареники\манты
+			.product-wrap
+				ul.product
+					li.product__item
+						.product__img
+							a.product__link(href="/images/product.png")
+								img(src="/images/product.png", alt="Пельмени домашние", title="Пельмени домашние")
+						.product__box
+							.product__title Пельмени домашние
+							.product__price
+								span.price 450
+								span.rouble c
+								span \
+								span.gramm 500 гр.
+							.product__calc
+								input.btn-calc.minus-btn(type="button", value="-")
+								input.product__size(type="text", name="product-col", value="1", readonly="readonly")
+								input.btn-calc.plus-btn(type="button", value="+")
+						.product__add-cart
+							span.not-add В корзину
+							span.add-cart В корзине
+					li.product__item
+						.product__img
+							a.product__link(href="/images/product.png")
+								img(src="/images/product.png", alt="Пельмени домашние", title="Пельмени домашние")
+						.product__box
+							.product__title Вареники с картошечкой и грибами
+							.product__price
+								span.price 450
+								span.rouble c
+								span \
+								span.gramm 500 гр.
+							.product__calc
+								input.btn-calc.minus-btn(type="button", value="-")
+								input.product__size(type="text", name="product-col", value="1", readonly="readonly")
+								input.btn-calc.plus-btn(type="button", value="+")
+						.product__add-cart
+							span.not-add В корзину
+							span.add-cart В корзине
+					li.product__item
+						.product__img
+							a.product__link(href="/images/product.png")
+								img(src="/images/product.png", alt="Пельмени домашние", title="Пельмени домашние")
+						.product__box
+							.product__title Пельмени рыбные
+							.product__price
+								span.price 450
+								span.rouble c
+								span \
+								span.gramm 500 гр.
+							.product__calc
+								input.btn-calc.minus-btn(type="button", value="-")
+								input.product__size(type="text", name="product-col", value="1", readonly="readonly")
+								input.btn-calc.plus-btn(type="button", value="+")
+						.product__add-cart
+							span.not-add В корзину
+							span.add-cart В корзине
+					li.product__item
+						.product__img
+							a.product__link(href="/images/product.png")
+								img(src="/images/product.png", alt="Пельмени домашние", title="Пельмени домашние")
+						.product__box
+							.product__title Пельмени деликатесные
+							.product__price
+								span.price 450
+								span.rouble c
+								span \
+								span.gramm 500 гр.
+							.product__calc
+								input.btn-calc.minus-btn(type="button", value="-")
+								input.product__size(type="text", name="product-col", value="1", readonly="readonly")
+								input.btn-calc.plus-btn(type="button", value="+")
+						.product__add-cart
+							span.not-add В корзину
+							span.add-cart В корзине
+					li.product__item
+						.product__img
+							a.product__link(href="/images/product.png")
+								img(src="/images/product.png", alt="Пельмени домашние", title="Пельмени домашние")
+						.product__box
+							.product__title Пельмени мясо-капустные
+							.product__price
+								span.price 450
+								span.rouble c
+								span \
+								span.gramm 500 гр.
+							.product__calc
+								input.btn-calc.minus-btn(type="button", value="-")
+								input.product__size(type="text", name="product-col", value="1", readonly="readonly")
+								input.btn-calc.plus-btn(type="button", value="+")
+						.product__add-cart.active
+							span.not-add В корзину
+							span.add-cart В корзине
+			
+block hidden

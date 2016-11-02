@@ -811,14 +811,14 @@ p.accent {
 }
 .header-right .phone {
   float: left;
-  margin-right: 25px;
+  margin-right: 117px;
   padding-top: 20px;
 }
 .header-right .cart {
-  float: left;
+  position: fixed;
+  right: 45px;
   -webkit-box-shadow: 0px 3px 25px 3px rgba(0, 0, 0, 0.26);
   box-shadow: 0px 3px 25px 3px rgba(0, 0, 0, 0.26);
-  position: relative;
 }
 .header-right .cart:hover {
   background: #ff602b;

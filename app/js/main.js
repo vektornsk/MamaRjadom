@@ -139,15 +139,15 @@ $('.product__add-cart').on('click', function(){
 	$(this).toggleClass('active');
 });
 
-/* header fixed*/
-$(window).scroll(function() {
-if ($(this).scrollTop() > 1){
-    $('.header').addClass("header_fixed");
-  }
-  else{
-    $('.header').removeClass("header_fixed");
-  }
-});
+// /* header fixed*/
+// $(window).scroll(function() {
+// if ($(this).scrollTop() > 1){
+//     $('.header').addClass("header_fixed");
+//   }
+//   else{
+//     $('.header').removeClass("header_fixed");
+//   }
+// });
 
 /* img product-sl*/
 

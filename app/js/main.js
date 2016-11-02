@@ -178,5 +178,19 @@ if ($(window).width() < 767) {
 	});
 }
 
+/*cart*/
+
+$('.cart').on('click', function(){
+	$('.overlay').show();
+	$('body').css('overflow-y', 'hidden');
+	$('.cart-box').toggleClass('active');
+});
+
+$('.cart-box__del').on('click', function(){
+	$('.overlay').hide();
+	$('body').css('overflow-y', 'auto');
+	$('.cart-box').toggleClass('active');
+});
+
 
 }); /*end $*/

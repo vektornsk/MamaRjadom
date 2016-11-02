@@ -1,5 +1,6 @@
 include _header.jade
 include _footer.jade
+include _cart.jade
 
 doctype
 html(lang='ru')
@@ -23,6 +24,7 @@ html(lang='ru')
 		<![endif]-->
 	body
 		#wrapper
+			+cart
 			block header
 			//- header
 			//- 	+header

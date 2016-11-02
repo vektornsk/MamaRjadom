@@ -161,6 +161,22 @@ $('.product-img').on('click', function(e){
 	$('.product-img-big').children().children().eq(0).attr('src', img);
 });
 
+/* filter adaptive*/
+
+$('.m-filter').on('click', function(){
+	$(this).toggleClass('active');
+});
+
+if ($(window).width() < 767) {
+	$(window).scroll(function() {
+	if ($(this).scrollTop() > 200){
+	    $('.filter-wrap').addClass("fixed");
+	  }
+	  else{
+	    $('.filter-wrap').removeClass("fixed");
+	  }
+	});
+}
 
 
 }); /*end $*/

@@ -15,6 +15,14 @@ article {
       font-size: 24px;
     }
   }
+
+  h2 {
+    font-family: @font-FS-bold;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px;
+  }
+
   p {
     font-size: 20px;
     @media (max-width: 991px) {
@@ -24,6 +32,25 @@ article {
       font-size: 16px;
       margin-bottom: 25px;
       font-family: @font-FS-reg;
+    }
+  }
+  ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+    li {
+      font-family: @font-FS-light;
+      font-size: 18px;
+      margin-bottom: 5px;
+      &:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        border-radius: 100%;
+        background: @color-orange;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
     }
   }
 }

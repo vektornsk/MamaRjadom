@@ -2013,7 +2013,7 @@ article p {
     height: 62px;
   }
 }
-.footer__top .menu__item {
+.footer__top .menu__item .menu__link::before {
   opacity: 0.7;
 }
 @media (max-width: 767px) {
@@ -2022,8 +2022,10 @@ article p {
   }
 }
 .footer__top .menu__item:hover {
-  opacity: 1;
   border-bottom: none;
+}
+.footer__top .menu__item:hover .menu__link::before {
+  opacity: 1;
 }
 .footer-right {
   padding-top: 20px;

@@ -2496,6 +2496,9 @@ article p {
   -webkit-border-radius: 6px;
   border-radius: 6px;
 }
+.product-sl .btn {
+  margin-left: 0;
+}
 /* img-list
 ================================================================================*/
 .product-img-big {

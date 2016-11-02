@@ -35,12 +35,16 @@ article {
     }
   }
   ul {
-    padding-left: 20px;
+    padding-left: 10px;
     margin-bottom: 30px;
     li {
       font-family: @font-FS-light;
       font-size: 18px;
       margin-bottom: 5px;
+      @media (max-width: 767px){
+        font-size: 16px;
+        font-family: @font-FS-reg;
+      }
       &:before {
         content: '';
         width: 6px;

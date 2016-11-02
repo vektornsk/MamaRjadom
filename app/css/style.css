@@ -1696,13 +1696,19 @@ article p {
   }
 }
 article ul {
-  padding-left: 20px;
+  padding-left: 10px;
   margin-bottom: 30px;
 }
 article ul li {
   font-family: 'FaraSans-Light', sans-serif;
   font-size: 18px;
   margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  article ul li {
+    font-size: 16px;
+    font-family: 'FaraSans-Reg', sans-serif;
+  }
 }
 article ul li:before {
   content: '';

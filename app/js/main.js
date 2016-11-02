@@ -149,4 +149,18 @@ if ($(this).scrollTop() > 1){
   }
 });
 
+/* img product-sl*/
+
+$('.product-img').on('click', function(e){
+	e.preventDefault();
+	$('.product-img').removeClass('active');
+	$(this).addClass('active');
+	var link = $(this).children().attr('href');
+	var img = $(this).children().children().attr('src');
+	$('.product-img-big').children().attr('href', link);
+	$('.product-img-big').children().children().eq(0).attr('src', img);
+});
+
+
+
 }); /*end $*/

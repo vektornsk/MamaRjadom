@@ -765,39 +765,44 @@ p.accent {
   display: -ms-flexbox;
   display: flex;
 }
+@media (max-width: 1300px) and (min-width: 1200px) {
+  .header .menu {
+    margin-left: -70px;
+  }
+}
 @media (max-width: 1199px) {
   .header .menu {
     position: absolute;
     display: none;
   }
 }
-.header_fixed {
+/*.header_fixed {
   position: fixed !important;
   height: 120px;
   top: 0;
   left: 0;
   width: 100%;
-  background: #fffae8;
-}
-.header_fixed .wrap {
-  -webkit-box-pack: start;
-  -webkit-justify-content: flex-start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
-}
-.header_fixed .logo {
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-.header_fixed .menu {
-  position: absolute;
-  display: none;
-}
-.header_fixed .m-menu {
-  display: block;
-}
+  background: @color-yellow;
+  .wrap {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .logo {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .menu {
+    position: absolute;
+    display: none;
+  }
+  .m-menu {
+    display: block;
+  }
+}*/
 .header-right {
   zoom: 1;
 }
@@ -826,15 +831,6 @@ p.accent {
   box-shadow: 0px 3px 25px 3px rgba(0, 0, 0, 0.35);
 }
 @media (max-width: 1199px) {
-  .header-right .cart {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
-  .header-right .cart:hover {
-    background: transparent;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-  }
 }
 .header-right .cart img {
   position: absolute;
@@ -847,17 +843,11 @@ p.accent {
   transform: translate(-50%, -50%);
 }
 @media (max-width: 1199px) {
-  .header-right .cart .cart__img {
-    display: none;
-  }
 }
 .header-right .cart .cart__img_mob {
   display: none;
 }
 @media (max-width: 1199px) {
-  .header-right .cart .cart__img_mob {
-    display: inline-block;
-  }
 }
 .header-right .cart .cart__size {
   padding: 5px 5px 2px;
@@ -900,9 +890,6 @@ p.accent {
   background: #f15a29;
 }
 @media (max-width: 1199px) {
-  .cart {
-    background: transparent;
-  }
 }
 @media (max-width: 767px) {
   .cart {

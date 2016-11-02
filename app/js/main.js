@@ -180,7 +180,8 @@ if ($(window).width() < 767) {
 
 /*cart*/
 
-$('.cart').on('click', function(){
+$('.cart').on('click', function(e){
+	e.preventDefault();
 	$('.overlay').show();
 	$('body').css('overflow-y', 'hidden');
 	$('.cart-box').toggleClass('active');

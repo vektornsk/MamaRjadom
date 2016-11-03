@@ -563,6 +563,26 @@ h3.line span,
   height: 42px;
   background: url(../images/svg/Menu_BTN.svg) no-repeat;
 }
+.btn-recipe {
+  display: inline-block;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+.btn-recipe span {
+  position: relative;
+  padding-left: 40px;
+}
+.btn-recipe span:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 28px;
+  height: 26px;
+  top: -2px;
+  left: 0;
+  background: url(../images/svg/Recipe.svg) no-repeat;
+}
 /* phone */
 .phone {
   vertical-align: middle;
@@ -1787,6 +1807,7 @@ article a {
 }
 article a:hover {
   color: #ff602b;
+  text-decoration: underline;
 }
 article h1 {
   font-family: 'FaraSans-Bold', sans-serif;
@@ -2947,6 +2968,7 @@ article ul li:before {
   width: calc(100% - 390px);
 }
 .product-sl .product-add-wrap {
+  margin-top: 20px;
   margin-bottom: 40px;
 }
 .product-sl .product__box {
@@ -2958,16 +2980,16 @@ article ul li:before {
 .product-sl .product__price {
   vertical-align: middle;
   display: inline-block;
-  width: 200px;
+  width: 160px;
   text-align: left;
 }
 .product-sl .product__price .price {
-  font-size: 46px;
+  font-size: 42px;
   color: #f15a29;
   line-height: 1;
 }
 .product-sl .product__price .rouble {
-  font-size: 46px;
+  font-size: 42px;
   color: #f15a29;
   line-height: 1;
 }

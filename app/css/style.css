@@ -3112,7 +3112,7 @@ article ul li:before {
 }
 @media (max-width: 420px) {
   .product-img-big {
-    width: 290px;
+    width: 280px;
   }
 }
 .product-img-big:hover .product__loop {
@@ -3157,7 +3157,7 @@ article ul li:before {
 }
 @media (max-width: 420px) {
   .product-img-list {
-    width: 290px;
+    width: 280px;
   }
 }
 .product-img {

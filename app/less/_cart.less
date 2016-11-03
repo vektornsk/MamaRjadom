@@ -21,18 +21,34 @@
     font-family: @font-FS-bold;
     font-size: 30px;
     color: @color-orange;
-    position: relative;
-    padding-left: 68px;
     margin-bottom: 50px;
-    &:before {
-      content: "";
-      position: absolute;
-      width: 48px;
-      height: 45px;
-      background: url(../images/svg/cart_mobile.svg) no-repeat;
-      left: 0;
-      top: 0;
+    span.cart-ico {
+      position: relative;
+      padding-left: 68px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 45px;
+        background: url(../images/svg/cart_mobile.svg) no-repeat;
+        left: 0;
+        top: 0;
+      }
     }
+    span.list-ico {
+      position: relative;
+      padding-left: 55px;
+      &:before {
+        content: "";
+        position: absolute;
+        width: 36px;
+        height: 46px;
+        background: url(../images/svg/Order_ico.svg) no-repeat;
+        left: 0;
+        top: 0;
+      }
+    }
+
   }
   &__del {
     position: absolute;
@@ -41,6 +57,7 @@
     cursor: pointer;
     width: 24px;
     height: 24px;
+    z-index: 1;
     svg {
       width: 24px;
       height: 24px;
@@ -143,4 +160,14 @@
       }
     }
   }
+}
+
+
+/* form */
+
+.form-wrap {
+  text-align: center;
+  padding-right: 30px;
+  width: 70%;
+  margin: 0 auto;
 }

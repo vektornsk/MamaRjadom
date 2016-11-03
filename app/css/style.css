@@ -1782,6 +1782,12 @@ input.submit:hover {
     padding-right: 20px;
   }
 }
+article a {
+  color: #f15a29;
+}
+article a:hover {
+  color: #ff602b;
+}
 article h1 {
   font-family: 'FaraSans-Bold', sans-serif;
   font-size: 30px;

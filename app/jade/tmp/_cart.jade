@@ -9,28 +9,28 @@ mixin cart()
         .cart-box__title 
           span.cart-ico В вашей корзине
         
-          ul.cart-product-wrap
-            li.product__item
-                .product__box
-                  .product__title
-                    a(href="#") Пельмени домашние
-                  .product__price
-                    span.price 450
-                    span.rouble c
-                  .product__calc
-                    input.btn-calc.minus-btn(type="button", value="")
-                    input.product__size(type="text", name="product-col", value="1", readonly="readonly")
-                    input.btn-calc.plus-btn(type="button", value="")
-                  .product__del
-                    | <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="16.579px" height="16.42px" viewBox="0 0 16.579 16.42" enable-background="new 0 0 16.579 16.42" xml:space="preserve">              <path fill="#c2c2c2"d="M16.231,14.201c-2.237-1.9-4.284-4.015-6.32-6.147c0.05-0.048,0.097-0.095,0.147-0.143              	c1.898-1.841,3.66-3.932,5.592-5.714c0.396-0.152,0.633-0.537,0.633-0.976c0-0.043,0-0.086,0-0.129c0-0.952-1.165-1.419-1.825-0.831              	c-2.078,1.853-3.948,4.141-5.973,6.107C8.447,6.404,8.422,6.44,8.384,6.477C6.297,4.302,4.185,2.155,1.84,0.252            	C0.801-0.592-0.692,0.885,0.358,1.736C2.692,3.631,4.803,5.765,6.88,7.929c-2.24,2.132-4.477,4.247-6.441,6.65              	c-0.847,1.037,0.63,2.533,1.485,1.485c2.397-2.495,4.38-4.483,6.484-6.544c2.042,2.138,4.095,4.26,6.338,6.166              	C15.769,16.555,17.263,15.077,16.231,14.201z"/>
-                    </svg>
-          .price-total-wrap
-            span Итого:
-            span.price-total 150000
-            span.rouble c
-          .btn-wrap
-            a.btn.btn_white.btn-orange(href="#")
-              span.order Оформить заказ
+        ul.cart-product-wrap
+          li.product__item
+              .product__box
+                .product__title
+                  a(href="#") Пельмени домашние
+                .product__price
+                  span.price 450
+                  span.rouble c
+                .product__calc
+                  input.btn-calc.minus-btn(type="button", value="")
+                  input.product__size(type="text", name="product-col", value="1", readonly="readonly")
+                  input.btn-calc.plus-btn(type="button", value="")
+                .product__del
+                  | <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="16.579px" height="16.42px" viewBox="0 0 16.579 16.42" enable-background="new 0 0 16.579 16.42" xml:space="preserve">              <path fill="#c2c2c2"d="M16.231,14.201c-2.237-1.9-4.284-4.015-6.32-6.147c0.05-0.048,0.097-0.095,0.147-0.143              	c1.898-1.841,3.66-3.932,5.592-5.714c0.396-0.152,0.633-0.537,0.633-0.976c0-0.043,0-0.086,0-0.129c0-0.952-1.165-1.419-1.825-0.831              	c-2.078,1.853-3.948,4.141-5.973,6.107C8.447,6.404,8.422,6.44,8.384,6.477C6.297,4.302,4.185,2.155,1.84,0.252            	C0.801-0.592-0.692,0.885,0.358,1.736C2.692,3.631,4.803,5.765,6.88,7.929c-2.24,2.132-4.477,4.247-6.441,6.65              	c-0.847,1.037,0.63,2.533,1.485,1.485c2.397-2.495,4.38-4.483,6.484-6.544c2.042,2.138,4.095,4.26,6.338,6.166              	C15.769,16.555,17.263,15.077,16.231,14.201z"/>
+                  </svg>
+        .price-total-wrap
+          span Итого:
+          span.price-total 150000
+          span.rouble c
+        .btn-wrap
+          a.btn.btn_white.btn-orange(href="#")
+            span.order Оформить заказ
               
       .cart-step-2.hidden
         .cart-box__title 

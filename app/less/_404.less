@@ -1,0 +1,42 @@
+/* error-page 404
+================================================================================*/
+
+.error-page {
+  text-align: center;
+  // width: 450px;
+  margin: 0px auto 0;
+  @media (max-width: 460px) {
+    // width: 280px;
+  }
+
+  h2 {
+    color: @color-orange;
+    margin-bottom: 10px;
+    span {
+      font-size: 28px;
+    }
+  }
+}
+.img-404 {
+  margin-bottom: 35px;
+  width: 320px;
+  height: 205px;
+  @media (max-width: 460px) {
+    width: 230px;
+    height: 150px;
+    margin-bottom: 20px;
+  }
+}
+.txt-404 {
+  font-family: @font-FS-light;
+  font-size: 20px;
+  @media (max-width: 460px) {
+    font-size: 14px;
+  }
+  a {
+    color: @color-orange;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

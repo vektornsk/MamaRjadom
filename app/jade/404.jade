@@ -1,0 +1,16 @@
+include ./tmp/_slider-top.jade
+extends ./tmp/_template.jade
+block title
+	title Доставка
+block header
+	header
+		+header("header_page")
+block content
+	section.section-offset.error-page
+		img.img-404(src="/images/svg/404.svg")
+		h2
+			span.title Страница не найдена...
+		.txt-404 К сожалению такой страницы не существует.<br>Начните с <a href="/">главной</a> страницы!
+			
+			
+block hidden

@@ -32,7 +32,7 @@ mixin cart()
             a.btn.btn_white.btn-orange(href="#")
               span.order Оформить заказ
               
-      .cart-step-2
+      .cart-step-2.hidden
         .cart-box__title 
           span.list-ico Оформелние товара
         .form-wrap
@@ -42,3 +42,15 @@ mixin cart()
             input.input(type="text", placeholder="Ваш телефон", name="phone", required)
           textarea.textarea(placeholder="Комментарий к заказу", name="comment")
           input.submit(type="submit", value="Отправить заказ")
+          .btn-wrap.center
+            a.btn.btn_black(href="#")
+              span.arrow Вернуться к списку
+              
+      .cart-step-3
+        .form-wrap-ok
+          img(src="/images/svg/Order_done.svg")
+          .ok-title Заказ оформлен!
+          .ok-text В ближайшее время мы с вами свяжемся!
+        .btn-wrap.center
+          a.btn.btn_black(href="#")
+            span.arrow На главную

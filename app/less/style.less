@@ -241,7 +241,9 @@ h3, .h3 {
 	width: 230px;
 	height: 67px;
 	text-align: center;
-
+	&-orange {
+		background: url(../images/svg/BTN_hover.svg) no-repeat;
+	}
 	&_white {
 		color: @color-white;
 	}
@@ -278,6 +280,20 @@ h3, .h3 {
 			top: -2px;
 			left: 0;
 			background: url(../images/svg/Recipe.svg) no-repeat;
+		}
+	}
+	span.order {
+		position: relative;
+		padding-left: 36px;
+		&:before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 21px;
+			height: 27px;
+			top: 0;
+			left: 0;
+			background: url(../images/svg/Order_btn.svg) no-repeat;
 		}
 	}
 }

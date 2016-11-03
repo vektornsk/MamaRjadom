@@ -471,7 +471,7 @@ h3.line span,
   text-align: center;
 }
 .btn-orange {
-  background: url(../images/svg/BTN_hover.svg) no-repeat;
+  background: #f15a29;
 }
 .btn_white {
   color: #ffffff;
@@ -2239,7 +2239,7 @@ article ul li:before {
   font-family: 'FaraSans-Bold', sans-serif;
 }
 .cart-box .btn-wrap .btn:hover {
-  opacity: 0.9;
+  background: #ff602b;
 }
 /* Footer
 ================================================================================*/
@@ -2840,8 +2840,16 @@ article ul li:before {
   vertical-align: middle;
   display: inline-block;
   width: 210px;
-  -webkit-border-radius: 6px;
-  border-radius: 6px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  height: 67px;
+  line-height: 67px;
+}
+.product-sl .product__add-cart .not-add:before {
+  top: 11px;
+}
+.product-sl .product__add-cart .add-cart:before {
+  top: 21px;
 }
 .product-sl .btn {
   margin-left: 0;

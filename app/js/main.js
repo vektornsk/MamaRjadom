@@ -9,6 +9,13 @@ $(function() {
 	  cssEase: 'linear'
 	});
 
+	/* fancybox*/
+
+	$('.fancybox-img').fancybox({
+		
+	});
+
+
 	/* mobil menu*/
 
 	$('.m-menu').on('click', function(){

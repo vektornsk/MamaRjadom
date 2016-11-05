@@ -2135,6 +2135,9 @@ article ul li:before {
   width: 95px;
   text-align: center;
 }
+.product__price_p-menu {
+  text-align: left;
+}
 .product__price .price {
   font-family: 'FaraSans-Bold', sans-serif;
   font-size: 24px;
@@ -2231,6 +2234,15 @@ article ul li:before {
   border-radius: 6px;
   text-align: center;
   font-size: 20px;
+}
+/*img-drag to cart*/
+.img-drag {
+  width: 37px;
+  height: 37px;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background: #f15a29;
+  display: none;
 }
 /* cart
 ================================================================================*/

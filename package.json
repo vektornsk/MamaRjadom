@@ -20,5 +20,13 @@
   },
   "main": "gulpfile.js",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vektornsk/MamaRjadom.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vektornsk/MamaRjadom/issues"
+  },
+  "homepage": "https://github.com/vektornsk/MamaRjadom#readme",
   "description": ""
 }

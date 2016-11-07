@@ -6,7 +6,7 @@ block header
 	header
 		+header("header_page")
 block content
-	section.section-offset.delivery
+	section.section-offset.catalog
 		.container
 			h2.line
 				span.title.title_orange Меню
@@ -45,8 +45,8 @@ block content
 						.product__box
 							.product__title
 								a(href="#") Пельмени домашние
-							.product__price
-								span.price 450
+							.product__price.product__price_p-menu
+								span.price(data-price='450') 450
 								span.rouble c
 							.product__calc
 								input.btn-calc.minus-btn(type="button", value="-")
@@ -55,6 +55,7 @@ block content
 						.product__add-cart
 							span.not-add В корзину
 							span.add-cart В корзине
+							.img-drag
 					li.product__item
 						.product__img
 							a.product__link.fancybox-img(href="/images/product.png")
@@ -63,8 +64,8 @@ block content
 						.product__box
 							.product__title
 								a(href="#") Вареники с картошечкой и грибами
-							.product__price
-								span.price 450
+							.product__price.product__price_p-menu
+								span.price(data-price='450') 450
 								span.rouble c
 							.product__calc
 								input.btn-calc.minus-btn(type="button", value="-")
@@ -73,6 +74,7 @@ block content
 						.product__add-cart
 							span.not-add В корзину
 							span.add-cart В корзине
+							.img-drag
 					li.product__item
 						.product__img
 							a.product__link.fancybox-img(href="/images/product.png")
@@ -81,8 +83,8 @@ block content
 						.product__box
 							.product__title 
 								a(href="#") Пельмени рыбные
-							.product__price
-								span.price 450
+							.product__price.product__price_p-menu
+								span.price(data-price='450') 450
 								span.rouble c
 							.product__calc
 								input.btn-calc.minus-btn(type="button", value="-")
@@ -91,6 +93,7 @@ block content
 						.product__add-cart
 							span.not-add В корзину
 							span.add-cart В корзине
+							.img-drag
 					li.product__item
 						.product__img
 							a.product__link.fancybox-img(href="/images/product.png")
@@ -99,8 +102,8 @@ block content
 						.product__box
 							.product__title 
 								a(href="#") Пельмени деликатесные
-							.product__price
-								span.price 450
+							.product__price.product__price_p-menu
+								span.price(data-price='450') 450
 								span.rouble c
 							.product__calc
 								input.btn-calc.minus-btn(type="button", value="-")
@@ -109,6 +112,7 @@ block content
 						.product__add-cart
 							span.not-add В корзину
 							span.add-cart В корзине
+							.img-drag
 					li.product__item
 						.product__img
 							a.product__link.fancybox-img(href="/images/product.png")
@@ -117,8 +121,8 @@ block content
 						.product__box
 							.product__title 
 								a(href="#") Пельмени мясо-капустные
-							.product__price
-								span.price 450
+							.product__price.product__price_p-menu
+								span.price(data-price='450') 450
 								span.rouble c
 								//- span \
 								//- span.gramm 500 гр.
@@ -129,5 +133,6 @@ block content
 						.product__add-cart.active
 							span.not-add В корзину
 							span.add-cart В корзине
+							.img-drag
 			
 block hidden

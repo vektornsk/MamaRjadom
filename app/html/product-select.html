@@ -31,13 +31,13 @@
           </svg>
         </div>
         <form>
-          <div class="cart-step-1 hidden">
+          <div class="cart-step-1">
             <div class="cart-box__title"> <span class="cart-ico">В вашей корзине</span></div>
             <ul class="cart-product-wrap">
               <li class="product__item">
                 <div class="product__box">
                   <div class="product__title"><a href="#">Пельмени домашние</a></div>
-                  <div class="product__price"><span class="price">450</span><span class="rouble">c</span></div>
+                  <div class="product__price"><span data-price="450" class="price">450</span><span class="rouble">c</span></div>
                   <div class="product__calc">
                     <input type="button" value="" class="btn-calc minus-btn"/>
                     <input type="text" name="product-col" value="1" readonly="readonly" class="product__size"/>
@@ -67,7 +67,7 @@
               <div class="btn-wrap center"><a href="#" class="btn btn_black"><span class="arrow">Вернуться к списку</span></a></div>
             </div>
           </div>
-          <div class="cart-step-3">
+          <div class="cart-step-3 hidden">
             <div class="form-wrap-ok"><img src="/images/svg/Order_done.svg"/>
               <div class="ok-title">Заказ оформлен!</div>
               <div class="ok-text">В ближайшее время мы с вами свяжемся!</div>
@@ -135,14 +135,16 @@
                 <div class="btn-wrap"><a href="#" class="btn-recipe"><span class="recipe">Рецепт</span><a href="#" class="btn-recipe"><span class="recipe">Рецепт 2</span></a></a></div>
                 <div class="product-add-wrap">
                   <div class="product__box">
-                    <div class="product__price"><span class="price">450</span><span class="rouble">c</span></div>
+                    <div class="product__price"><span data-price="1050" class="price">1050</span><span class="rouble">c</span></div>
                     <div class="product__calc">
                       <input type="button" value="-" class="btn-calc minus-btn">
                       <input type="text" name="product-col" value="1" readonly="readonly" class="product__size">
                       <input type="button" value="+" class="btn-calc plus-btn">
                     </div>
                   </div>
-                  <div class="product__add-cart"><span class="not-add">В корзину</span><span class="add-cart">В корзине</span></div>
+                  <div class="product__add-cart"><span class="not-add">В корзину</span><span class="add-cart">В корзине</span>
+                    <div class="img-drag"></div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -549,6 +549,33 @@ input.submit {
 				background-image: url('../images/fancybox/fancybox_loading@2x.gif');
 			}
 }
+/* arrow toTop */
+
+.to-top {
+	width: 61px;
+	height: 59px;
+	border-radius: 15px;
+	background: url('../images/toTop.png') no-repeat;
+	position: fixed;
+	bottom: 50px;
+	right: 15px;
+	cursor: pointer;
+	z-index: 100;
+	display: none;
+	-moz-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.35);
+	@media (max-width: 767px) {
+		display: none !important;
+	}
+	&:hover {
+		background-position: 0 -59px;
+		@media (max-width: 992px) {
+			background-position: 0 0;
+		}
+	}
+}
+
 
 /* Style include*/
 @import "_header";

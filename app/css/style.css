@@ -1679,8 +1679,8 @@ input.submit:hover {
   overflow: hidden;
   border-style: solid;
   border-width: 100px 100px 100px;
-  -webkit-border-image: url(/images/border_orange.png) 100 100 100 repeat;
-  border-image: url(/images/border_orange.png) 100 100 100 fill repeat;
+  -webkit-border-image: url(../images/border_orange.png) 100 100 100 repeat;
+  border-image: url(../images/border_orange.png) 100 100 100 fill repeat;
   position: relative;
 }
 @media (max-width: 1199px) {
@@ -1783,8 +1783,8 @@ input.submit:hover {
   display: inline-block;
   border-style: solid;
   border-width: 100px 100px 100px;
-  -webkit-border-image: url(/images/border.png) 100 100 100 repeat;
-  border-image: url(/images/border.png) 100 100 100 fill repeat;
+  -webkit-border-image: url(../images/border.png) 100 100 100 repeat;
+  border-image: url(../images/border.png) 100 100 100 fill repeat;
   text-transform: uppercase;
   text-align: center;
   font-family: 'Neucha-Reg', sans-serif;

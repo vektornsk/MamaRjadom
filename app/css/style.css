@@ -1675,23 +1675,16 @@ input.submit:hover {
 /* box-img-page */
 .box-img-page {
   width: 100%;
-  height: 800px;
+  margin: 0 auto;
   overflow: hidden;
-  border-style: solid;
-  border-width: 100px 100px 100px;
-  -webkit-border-image: url(../images/border_orange.png) 100 100 100 repeat;
-  border-image: url(../images/border_orange.png) 100 100 100 fill repeat;
+  -webkit-border-image: url(../images/svg/Border_orange.svg);
+  border-image: url(../images/svg/Border_orange.svg);
+  border-style: dashed;
+  border-width: 40px;
+  border-image-width: 100px;
+  border-image-slice: 40%;
   position: relative;
-}
-@media (max-width: 1199px) {
-  .box-img-page {
-    height: 601px;
-  }
-}
-@media (max-width: 991px) {
-  .box-img-page {
-    height: 501px;
-  }
+  text-align: center;
 }
 @media (max-width: 767px) {
   .box-img-page {
@@ -1708,17 +1701,10 @@ input.submit:hover {
   }
 }
 .box-img-page img {
-  max-width: 1006px;
   width: 100%;
-  height: 586px;
+  height: auto;
   -webkit-border-radius: 6px;
   border-radius: 6px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   object-fit: cover;
 }
 @media (max-width: 1199px) {
@@ -1779,12 +1765,24 @@ input.submit:hover {
   }
 }
 .carusel-box {
-  width: 1140px;
-  display: inline-block;
-  border-style: solid;
-  border-width: 100px 100px 100px;
-  -webkit-border-image: url(../images/border.png) 100 100 100 repeat;
-  border-image: url(../images/border.png) 100 100 100 fill repeat;
+  width: 1100px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 auto;
+  -webkit-border-image: url(../images/svg/Border_white.svg);
+  border-image: url(../images/svg/Border_white.svg);
+  border-style: dashed;
+  border-width: 15px;
+  border-image-width: 100px;
+  border-image-slice: 40%;
+  border-image-outset: 15px;
+  min-height: 250px;
   text-transform: uppercase;
   text-align: center;
   font-family: 'Neucha-Reg', sans-serif;
@@ -1795,7 +1793,7 @@ input.submit:hover {
 }
 @media (max-width: 1199px) {
   .carusel-box {
-    width: 940px;
+    width: 910px;
     font-size: 46px;
   }
 }
@@ -1813,18 +1811,21 @@ input.submit:hover {
     font-size: 30px;
   }
 }
-.carusel-box h1 {
+.carusel-box h1,
+.carusel-box span {
   font-size: 50px;
   line-height: 1.28;
   font-weight: 300;
 }
 @media (max-width: 1199px) {
-  .carusel-box h1 {
+  .carusel-box h1,
+  .carusel-box span {
     font-size: 46px;
   }
 }
 @media (max-width: 767px) {
-  .carusel-box h1 {
+  .carusel-box h1,
+  .carusel-box span {
     font-size: 30px;
   }
 }

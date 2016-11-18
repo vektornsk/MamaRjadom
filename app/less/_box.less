@@ -202,21 +202,19 @@
 /* box-img-page */
 .box-img-page {
   width: 100%;
-  height: 800px;
+  margin: 0 auto;
   overflow: hidden;
-  border-style: solid;
-  border-width: 100px 100px 100px;
-  -moz-border-image: url(../images/border_orange.png) 100 100 100 repeat;
-  -webkit-border-image: url(../images/border_orange.png) 100 100 100 repeat;
-  -o-border-image: url(../images/border_orange.png) 100 100 100 repeat;
-  border-image: url(../images/border_orange.png) 100 100 100 fill repeat;
+  -moz-border-image: url(../images/svg/Border_orange.svg);
+  -webkit-border-image: url(../images/svg/Border_orange.svg);
+  -o-border-image: url(../images/svg/Border_orange.svg);
+  border-image: url(../images/svg/Border_orange.svg);
+  border-style: dashed;
+  border-width: 40px;
+  border-image-width: 100px;
+  border-image-slice: 40%;
   position: relative;
-  @media (max-width: 1199px) {
-    height: 601px;
-  }
-  @media (max-width: 991px){
-    height: 501px;
-  }
+  text-align: center;
+
   @media (max-width: 767px){
     border: none;
     width: 90%;
@@ -228,14 +226,9 @@
     height: 200px;
   }
   img {
-    max-width: 1006px;
     width: 100%;
-    height: 586px;
+    height: auto;
     border-radius: 6px;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     object-fit: cover;
     @media (max-width: 1199px) {
       height: 400px;

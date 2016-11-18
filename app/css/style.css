@@ -352,7 +352,7 @@ h3.line span,
   }
 }
 .line {
-  background: url(../images/line.png) repeat-x center;
+  background: url(../images/svg/line.svg) repeat-x center;
 }
 @media (max-width: 767px) {
   .line {
@@ -800,7 +800,7 @@ input.submit:hover {
   height: 59px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
-  background: url('../images/toTop.png') no-repeat;
+  background: url('../images/svg/Up_btn.svg') no-repeat;
   position: fixed;
   bottom: 50px;
   right: 15px;
@@ -922,7 +922,7 @@ input.submit:hover {
   background: red;
   margin-top: 30px;
   margin-left: 30px;
-  background: url(../images/m-menu.png) no-repeat;
+  background: url(../images/svg/Menu.svg) no-repeat;
   cursor: pointer;
   position: relative;
   z-index: 100;
@@ -1680,7 +1680,7 @@ input.submit:hover {
   -webkit-border-image: url(../images/svg/Border_orange.svg);
   border-image: url(../images/svg/Border_orange.svg);
   border-style: dashed;
-  border-width: 40px;
+  border-width: 70px;
   border-image-width: 100px;
   border-image-slice: 40%;
   position: relative;
@@ -1849,7 +1849,7 @@ input.submit:hover {
 .slick-dots li button {
   font-size: 0;
   border: 0;
-  background: url(../images/button-slider.png) no-repeat;
+  background: url(../images/svg/Slide_select.svg) no-repeat;
   width: 29px;
   height: 27px;
 }
@@ -2879,7 +2879,7 @@ article ul li:before {
   left: 9px;
   width: 16px;
   height: 16px;
-  background: url(../images/mh.png) no-repeat;
+  background: url(../images/svg/MH.svg) no-repeat;
 }
 .footer__bottom .devel a:hover {
   text-decoration: underline;

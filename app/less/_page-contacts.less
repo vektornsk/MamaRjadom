@@ -1,21 +1,28 @@
 /* page CONTACTS
 ================================================================================*/
 .contacts {
-  text-align: center;
+  // text-align: center;
+  padding-bottom: 80px;
+  @media (max-width: 991px) {
+    padding-bottom: 0;
+    text-align: center;
+  }
 }
 
 .contacts-list {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  @media (max-width: 1199px){
-    margin-top: 100px;
-    margin-bottom: 100px;
+  float: right;
+  padding-top: 10px;
+  width: 47.5%;
+  @media (max-width: 1199px) {
+    width: 50%;
   }
-	@media (max-width: 991px){
-    margin-top: 80px;
-    margin-bottom: 80px;
+  @media (max-width: 991px) {
+    width: 100%;
+    padding-top: 0;
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
-	@media (max-width: 767px){
+  @media (max-width: 767px){
     margin-top: 40px;
     margin-bottom: 40px;
   }
@@ -25,13 +32,18 @@
     font-size: 20px;
     line-height: 1;
     padding-top: 60px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
     color: @color-black;
     position: relative;
+    @media (max-width: 991px) {
+      margin-bottom: 60px;
+    }
     span {
-
-      &:before {
-
+      position: relative;
+      padding-left: 60px;
+      @media (max-width: 991px) {
+        padding-left: 0;
+        position: static;
       }
     }
   }
@@ -43,12 +55,17 @@
     content: '';
     position: absolute;
     display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
     width: 30px;
     height: 43px;
     background: url(../images/svg/Place.svg) no-repeat;
+    @media (max-width: 991px) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }
 .contacts-tel {
@@ -57,12 +74,17 @@
     content: '';
     position: absolute;
     display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
     width: 28px;
     height: 45px;
     background: url(../images/svg/Phone.svg) no-repeat;
+    @media (max-width: 991px) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }
 .contacts-email {
@@ -71,11 +93,16 @@
     content: '';
     position: absolute;
     display: block;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
     width: 43px;
     height: 34px;
     background: url(../images/svg/Mail.svg) no-repeat;
+    @media (max-width: 991px) {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
   }
 }

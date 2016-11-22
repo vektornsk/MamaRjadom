@@ -1991,7 +1991,7 @@ article ol li {
   }
 }
 article ol li::before {
-  content: counter(li);
+  content: counter(li) ".";
   counter-increment: li;
   position: absolute;
   left: 2px;

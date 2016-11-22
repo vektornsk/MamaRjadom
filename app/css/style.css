@@ -1973,6 +1973,37 @@ article ul li:before {
   vertical-align: middle;
   margin-right: 10px;
 }
+article ol {
+  margin-bottom: 30px;
+  padding-left: 25px;
+  counter-reset: li;
+  position: relative;
+}
+article ol li {
+  font-family: 'FaraSans-Light', sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  article ol li {
+    font-size: 16px;
+    font-family: 'FaraSans-Reg', sans-serif;
+  }
+}
+article ol li::before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: 2px;
+  font-family: 'FaraSans-Reg', sans-serif;
+  font-size: 18px;
+  color: #f15a29;
+}
+@media (max-width: 767px) {
+  article ol li::before {
+    font-size: 16px;
+  }
+}
 /* filter
 ================================================================================*/
 @media (max-width: 767px) {

@@ -1774,6 +1774,10 @@ input.submit:hover {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin: 0 auto;
   -webkit-border-image: url(../images/svg/Border_white.svg);
   border-image: url(../images/svg/Border_white.svg);

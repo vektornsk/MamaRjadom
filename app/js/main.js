@@ -12,7 +12,7 @@ $(function() {
 	/* fancybox*/
 
 	$('.fancybox-img').fancybox({
-
+		maxWidth: 640
 	});
 
 

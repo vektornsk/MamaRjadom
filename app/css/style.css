@@ -801,6 +801,7 @@ input.submit:hover {
   -webkit-border-radius: 15px;
   border-radius: 15px;
   background: url('../images/svg/Up_btn.svg') no-repeat;
+  background-size: cover;
   position: fixed;
   bottom: 50px;
   right: 15px;
@@ -812,7 +813,8 @@ input.submit:hover {
 }
 @media (max-width: 767px) {
   .to-top {
-    display: none !important;
+    width: 41px;
+    height: 39px;
   }
 }
 .to-top:hover {

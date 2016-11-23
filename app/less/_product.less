@@ -109,7 +109,23 @@
       font-size: 18px;
     }
   }
-  &__calc {}
+  &__gram {
+    display: inline-block;
+    font-size: 18px;
+    line-height: 36px;
+    color: #8d8d8d;
+    float: right;
+    &_left {
+      float: none;
+      margin-bottom: 30px;
+      color: #000;
+      font-weight: 600;
+      line-height: 1;
+    }
+  }
+  &__calc {
+    overflow: hidden;
+  }
   &__add-cart {
     width: 100%;
     color: @color-white;

@@ -2472,7 +2472,7 @@ article ol li::before {
 }
 @media (max-height: 779px) {
   .cart-product-wrap {
-    height: 200px;
+    height: 224px;
   }
 }
 .cart-product-wrap .product__item {
@@ -2480,11 +2480,7 @@ article ol li::before {
   border-bottom: 1px solid #c2c2c2;
   -webkit-border-radius: 0;
   border-radius: 0;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .cart-product-wrap .product__item {
-    width: 86%;
-  }
+  margin-left: 0;
 }
 .cart-product-wrap .product__box {
   border: none;

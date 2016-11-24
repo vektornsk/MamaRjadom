@@ -1915,6 +1915,7 @@ input.submit:hover {
 }
 article a {
   color: #f15a29;
+  font-family: 'FaraSans-Bold', sans-serif;
 }
 article a:hover {
   color: #ff602b;

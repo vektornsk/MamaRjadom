@@ -1,0 +1,59 @@
+include ./tmp/_slider-top.jade
+include ./tmp/_bread-crumbs.jade
+extends ./tmp/_template.jade
+block title
+	title Товар - Детальная
+block header
+	header
+		+header("header_page")
+block content
+	section.section-bottom.product-sl
+		.container
+			+bread
+			article
+				h1
+					span Вареники с картошечкой и жареным луком
+				.product-sl-wrap
+					.left
+						.product-img-wrap
+							.product-img-big
+								a.fancybox-img(href="/images/pr-1.png", rel="gal")
+									img(src="/images/pr-1.png", alt="", title="")
+									.product__loop
+							ul.product-img-list
+								li.product-img.active
+									a(href="/images/pr-1.png", rel="gal")
+										img(src="/images/pr-1.png", alt="", title="")
+								li.product-img
+									a(href="/images/img-index-menu3.png", rel="gal")
+										img(src="/images/img-index-menu3.png", alt="", title="")
+								li.product-img
+									a(href="/images/product.png", rel="gal")
+										img(src="/images/product.png", alt="", title="")
+					.right
+						p 
+							| Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Curabitur arcu erat, accumsan id imperdiet et, porttitor
+						p
+							| <b>Состав:</b> Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Proin eget tortor risus. Sed porttitor lectus nibh. Donec sollicitudin molestie malesuada.
+						span.product__gram.product__gram_left 1200 гр.
+						.btn-wrap
+							a.btn-recipe(href="#")
+								span.recipe Рецепт
+								a.btn-recipe(href="#")
+									span.recipe Рецепт 2
+						.product-add-wrap
+							.product__box
+								.product__price
+									span.price(data-price='1050') 1050
+									span.rouble c
+								.product__none
+									span Предзаказ 
+			.btn-wrap
+				a.btn.btn_black(href="#")
+					span.arrow Вернуться к списку
+		.popup-no-product#js-no-product
+			img(src="/images/svg/none.svg", alt="")
+			.popup-no-product__title Товар уже продан.
+			.popup-no-product__text Принимаем заказы на следующий сезон по телефону.
+			.popup-no-product__phone +7 (913) 387-48-27
+block hidden

@@ -3486,6 +3486,18 @@ article ol li::before {
 .product-sl .product__add-cart .add-cart:before {
   top: 21px;
 }
+.product-sl .product__none {
+  vertical-align: middle;
+  display: inline-block;
+  width: 210px;
+  -webkit-border-radius: 9px;
+  border-radius: 9px;
+  height: 67px;
+  line-height: 67px;
+}
+.product-sl .product__none span:before {
+  top: 17px;
+}
 @media (max-width: 991px) {
   .product-sl .btn-wrap {
     text-align: center;

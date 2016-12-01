@@ -97,7 +97,7 @@ block content
 							span.not-add В корзину
 							span.add-cart В корзине
 							.img-drag
-					li.product__item
+					li.product__item.product__item--no
 						.product__img
 							a.product__link.fancybox-img(href="/images/product.png")
 								img(src="/images/product.png", alt="Пельмени домашние", title="Пельмени домашние")
@@ -113,10 +113,13 @@ block content
 								input.product__size(type="text", name="product-col", value="1", readonly="readonly")
 								input.btn-calc.plus-btn(type="button", value="+")
 								span.product__gram 1200 гр.
-						.product__add-cart
-							span.not-add В корзину
-							span.add-cart В корзине
-							.img-drag
+						//- .product__add-cart
+						//- 	span.not-add В корзину
+						//- 	span.add-cart В корзине
+						//- 	.img-drag
+						.product__none
+							span Предзаказ 
+							
 					li.product__item
 						.product__img
 							a.product__link.fancybox-img(href="/images/product.png")
@@ -139,5 +142,12 @@ block content
 							span.not-add В корзину
 							span.add-cart В корзине
 							.img-drag
+		
+		.popup-no-product#js-no-product
+			img(src="/images/svg/none.svg", alt="")
+			.popup-no-product__title Товар уже продан.
+			.popup-no-product__text Принимаем заказы на следующий сезон по телефону.
+			.popup-no-product__phone +7 (913) 387-48-27
+		
 			
 block hidden

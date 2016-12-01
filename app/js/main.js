@@ -259,6 +259,13 @@ $('.to-top').on('click', function(){
 	$('body,html').animate({scrollTop:0},500);
 });
 
+/* no-product*/
+
+$('.product__none').on('click', function(){
+	$.fancybox([
+            { href : '#js-no-product' }
+        ]);
+});
 
 
 
